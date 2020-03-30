@@ -43,11 +43,6 @@ haxBtn.addEventListener('click', function(){
 	if ($('input')[0].value === "hax" && CGScore < 9999) {
 		CGScore += 9999;
 	}
-	if($('input').val() === "Kachi"){
-		var UltimateBattle = new Audio('KachiDaze(Pirated).mp3')
-		var SongID;
-		loopPlay(UltimateBattle, $('#haxInput'));
-	}
 });
 
 var SIID;
@@ -105,7 +100,7 @@ SFToMain.click(function(){
 });
 
 
-// COLOR GAME CODE
+// COLOR GAME CODE (MADE FROM TUTORIAL, NOT ORIGINAL IM SORRY)
 
 
 var generateColors = function(num){
@@ -196,132 +191,132 @@ for (var i = 0; i < squares.length; i++) {
 }
 
 
-// CRAPPY RPG CODE (WILL BE A LOT)
+// CRAPPY RPG CODE (WILL BE A LOT, GAVE UP ALREADY)
 
 
 //vars
-var chrST = $('#charSelectText')[0];
-var chrSI = $('#charSelectImg');
-var username;
-var SFclass;
-var uHP;
-var uDMG;
-var uSPD;
-var battleText = $('#battleText');
-//set up img and stats
-var setChar = function(char, imgNum, level){
-	var entClass;
-	if (typeof level === 'undefined') { 
-		level = null; 
-	}
-	if (char === '#uChar') {
-		entClass = SFclass;
-	}
-	else {
-		entClass = levels[0][1]
-	}
-	if (entClass === 'Greatsword') {
-		$(char).attr('src', great[imgNum]);
-	}
-	else if (entClass === 'Longsword') {
-		$(char).attr('src', long[imgNum]);
-	}
-	else {
-		$(char).attr('src', scim[imgNum]);
-	}
-};
-var setStats = function(char){
+// var chrST = $('#charSelectText')[0];
+// var chrSI = $('#charSelectImg');
+// var username;
+// var SFclass;
+// var uHP;
+// var uDMG;
+// var uSPD;
+// var battleText = $('#battleText');
+// //set up img and stats
+// var setChar = function(char, imgNum, level){
+// 	var entClass;
+// 	if (typeof level === 'undefined') { 
+// 		level = null; 
+// 	}
+// 	if (char === '#uChar') {
+// 		entClass = SFclass;
+// 	}
+// 	else {
+// 		entClass = levels[0][1]
+// 	}
+// 	if (entClass === 'Greatsword') {
+// 		$(char).attr('src', great[imgNum]);
+// 	}
+// 	else if (entClass === 'Longsword') {
+// 		$(char).attr('src', long[imgNum]);
+// 	}
+// 	else {
+// 		$(char).attr('src', scim[imgNum]);
+// 	}
+// };
+// var setStats = function(char){
 
-}
-//battle
-var attack = function(){
+// }
+// //battle
+// var attack = function(){
 	
-}
-var battle = function(lvl){
-	var handle;
-	setChar('#uChar', 0);
-	setChar('#eChar', 0, lvl);
-	if (levels[lvl][6][1] === 0) {
-		battleText.text(levels[lvl][7])
-	}
-	else {
+// }
+// var battle = function(lvl){
+// 	var handle;
+// 	setChar('#uChar', 0);
+// 	setChar('#eChar', 0, lvl);
+// 	if (levels[lvl][6][1] === 0) {
+// 		battleText.text(levels[lvl][7])
+// 	}
+// 	else {
 
-	}
-	handle = setInterval(function(){
-		$('#uChar').css('margin-left', count + 'px'); 
-		$('#eChar').css('margin-right', count +'px');
-		if (count > 249) {
-			setChar('#uChar', 1);
-			setChar('#eChar', 1, lvl);
-			clearInterval(handle);
-			count = 0;
-		} 
-		count ++;
-	}, 16)
-}
-//levels array [name, class, health, attack, speed, stages of dialogue/text + battling, which ones are text(0) or battling(1), dialogue/text (goes on depending on stages)]
-var levels = [
-	['0-1', 'Longsword', 100, 1, 70, 0, [0, 0, 1, 0, 0, 1, 0, 1], 
-		'Welcome to the tutorial! This\'ll explain how things work here. Click anywhere in the box to continue.',
-		'You and your enemy just are running across the screen. The second you meet in the middle and assume the rest position, you may attack.',
-		'To attack, press either W, A, S, or D. There will be a delay where your attack button is shown in front of you (explained later). Try it now!',
-		'Attacking or Blocking (explained next) costs stamina. Your stamina is shown on the bottommost bar, and same for your enemy\'s. It regenerates based on your Speed.',
-		'Your opponent looks ready to attack! To block effectively, hold Shift and either W, A, S, or D, depending on the attack, shown in front of your opponent. Click to continue.',
-		'Nice work! Now finish him off! Click to continue.']
-];
-// r = rest, b = block, rt = right, lf = left, -h = hit, -p = prep, p = poke, d = down (slash)
-//character models
-var scim = ["swordfight/scim/run.gif", "swordfight/scim/r.png"];
-var long = ["swordfight/long/run.gif", "swordfight/long/r.png"];
-var great = ["swordfight/great/run.gif", "swordfight/great/r.png"];
-//formatting
-$('#SFToMain').css('border-radius', '40%');
-$('#charSelectText').css('margin-left', '20px');
-$('#charSelectText').css('margin-top', '20px');
-$('#name').css('margin-right', '80px');
-$('#name').css('margin-top', '20px');
-$('#confirm').css('border-radius', '20%');
-chrSI.css('object-fit', 'contain');
-chrSI.css('width', '615px');
-$('#uChar').css('background-image', 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.75)')
-$('#eChar').css('background-image', 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.75)')
-//screens
-$('#titleSF').css('display', 'block');
-$('#charSF').css('display', 'none');
-$('#battleSF').css('display', 'none');
-$('#SFPlay').click(function(){
-	screenSwitch($('#titleSF'), $('#charSF'));
-});
-$('#confirm').click(function(){
-	username = $('#name').val();
-	if (username.length < 1) {
-		alert('Please enter a username!');
-		return
-	} 
-	screenSwitch($('#charSF'), $('#battleSF'));
-	SFclass = $('select').val();
-	$('#uName').text(username + ":");
-	battle(0);
-});
-//char select
-$('select').change(function(){
-	if ($('select').val() === 'Greatsword') {
-		$('#DamageRelStat').attr('value', '100');
-		$('#SpeedRelStat').attr('value', '40');
-		chrST.textContent = 'Wielding a greatsword is hard work, but the times it hits are satisfying.';
-		chrSI.attr('src', great[0]);
-	}
-	if ($('select').val() === 'Longsword') {
-		$('#DamageRelStat').attr('value', '75');
-		$('#SpeedRelStat').attr('value', '75');
-		chrST.textContent = 'Masters of the longsword can handle most situations better that anyone else.';
-		chrSI.attr('src', long[0]);
-	}
-	if ($('select').val() === 'Scimitar') {
-		$('#DamageRelStat').attr('value', '40');
-		$('#SpeedRelStat').attr('value', '100');
-		chrST.textContent = 'Scimitars are fast, overwhelming defenses and annoying enemies.';
-		chrSI.attr('src', scim[0]);
-	}
-})
+// 	}
+// 	handle = setInterval(function(){
+// 		$('#uChar').css('margin-left', count + 'px'); 
+// 		$('#eChar').css('margin-right', count +'px');
+// 		if (count > 249) {
+// 			setChar('#uChar', 1);
+// 			setChar('#eChar', 1, lvl);
+// 			clearInterval(handle);
+// 			count = 0;
+// 		} 
+// 		count ++;
+// 	}, 16)
+// }
+// //levels array [name, class, health, attack, speed, stages of dialogue/text + battling, which ones are text(0) or battling(1), dialogue/text (goes on depending on stages)]
+// var levels = [
+// 	['0-1', 'Longsword', 100, 1, 70, 0, [0, 0, 1, 0, 0, 1, 0, 1], 
+// 		'Welcome to the tutorial! This\'ll explain how things work here. Click anywhere in the box to continue.',
+// 		'You and your enemy just are running across the screen. The second you meet in the middle and assume the rest position, you may attack.',
+// 		'To attack, press either W, A, S, or D. There will be a delay where your attack button is shown in front of you (explained later). Try it now!',
+// 		'Attacking or Blocking (explained next) costs stamina. Your stamina is shown on the bottommost bar, and same for your enemy\'s. It regenerates based on your Speed.',
+// 		'Your opponent looks ready to attack! To block effectively, hold Shift and either W, A, S, or D, depending on the attack, shown in front of your opponent. Click to continue.',
+// 		'Nice work! Now finish him off! Click to continue.']
+// ];
+// // r = rest, b = block, rt = right, lf = left, -h = hit, -p = prep, p = poke, d = down (slash)
+// //character models
+// var scim = ["swordfight/scim/run.gif", "swordfight/scim/r.png"];
+// var long = ["swordfight/long/run.gif", "swordfight/long/r.png"];
+// var great = ["swordfight/great/run.gif", "swordfight/great/r.png"];
+// //formatting
+// $('#SFToMain').css('border-radius', '40%');
+// $('#charSelectText').css('margin-left', '20px');
+// $('#charSelectText').css('margin-top', '20px');
+// $('#name').css('margin-right', '80px');
+// $('#name').css('margin-top', '20px');
+// $('#confirm').css('border-radius', '20%');
+// chrSI.css('object-fit', 'contain');
+// chrSI.css('width', '615px');
+// $('#uChar').css('background-image', 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.75)')
+// $('#eChar').css('background-image', 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.75)')
+// //screens
+// $('#titleSF').css('display', 'block');
+// $('#charSF').css('display', 'none');
+// $('#battleSF').css('display', 'none');
+// $('#SFPlay').click(function(){
+// 	screenSwitch($('#titleSF'), $('#charSF'));
+// });
+// $('#confirm').click(function(){
+// 	username = $('#name').val();
+// 	if (username.length < 1) {
+// 		alert('Please enter a username!');
+// 		return
+// 	} 
+// 	screenSwitch($('#charSF'), $('#battleSF'));
+// 	SFclass = $('select').val();
+// 	$('#uName').text(username + ":");
+// 	battle(0);
+// });
+// //char select
+// $('select').change(function(){
+// 	if ($('select').val() === 'Greatsword') {
+// 		$('#DamageRelStat').attr('value', '100');
+// 		$('#SpeedRelStat').attr('value', '40');
+// 		chrST.textContent = 'Wielding a greatsword is hard work, but the times it hits are satisfying.';
+// 		chrSI.attr('src', great[0]);
+// 	}
+// 	if ($('select').val() === 'Longsword') {
+// 		$('#DamageRelStat').attr('value', '75');
+// 		$('#SpeedRelStat').attr('value', '75');
+// 		chrST.textContent = 'Masters of the longsword can handle most situations better that anyone else.';
+// 		chrSI.attr('src', long[0]);
+// 	}
+// 	if ($('select').val() === 'Scimitar') {
+// 		$('#DamageRelStat').attr('value', '40');
+// 		$('#SpeedRelStat').attr('value', '100');
+// 		chrST.textContent = 'Scimitars are fast, overwhelming defenses and annoying enemies.';
+// 		chrSI.attr('src', scim[0]);
+// 	}
+// })
 //battle
