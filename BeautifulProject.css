@@ -1,0 +1,266 @@
+h1 {
+	color: #000000;
+	font-size: 3em;
+	text-shadow: 2px 1px 2px #101010,
+				 4px 2px 2px #202020,
+				 6px 3px 2px #303030,
+				 8px 4px 2px #505050,
+				 10px 5px 2px #808080,
+				 12px 6px 2px #c0c0c0;
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+body {
+	background: url("https://static.vecteezy.com/system/resources/previews/000/101/237/non_2x/free-abstract-background-11-vector.jpg") no-repeat center center fixed;
+	height: 100%;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Averia Serif Libre';
+}
+tbody {
+	border-collapse: collapse;
+	border-width: 0.5em
+	border-style: outset;
+	border-color: #ffcccc;
+	box-shadow: 1px 1px 1px 0.1em #f0ccf0;
+	padding: 2%;
+}
+table {
+	margin: 5% auto;
+}
+img {
+	width: 100%;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 233, 100, 0.75), rgba(0, 0, 0, 0));
+	object-fit: contain;
+}
+td {
+	width: 21%;
+}
+#col-mid {
+	padding: none;
+	border: 0.6em ridge seagreen;
+	width: 50%;
+}
+hr {
+	border: 0; 
+	height: 1px; 
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 233, 100, 0.75), rgba(0, 0, 0, 0));
+	padding-bottom: 5%;
+}
+.inTable {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+    margin: 3%;
+    padding-bottom: 0;
+}
+p {
+	margin: auto;
+	text-align: center;
+}
+em {
+	border: 1px inset linear-gradient(to right, green, cyan, blue);
+	font-weight: 700;
+}
+.extraStyle {
+	border: 3px dashed rgba(122, 255, 200, 0.8);
+	background-color: rgba(200, 200, 200, 0.5);
+}
+
+/*Color Game Stuff*/
+
+.square {
+	width: 30%;
+	background-color: purple;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66666%;
+	border-radius: 15%;
+	transition: background-color 0.8s;
+	-webkit-transition: background-color 0.8s;
+	-moz-transition: background-color 0.8s;
+	/*-o-transition: background-color 0.8s;*/
+}
+
+.container {
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+#CGTitle {
+	font-family: "Mali";
+	line-height: 1.1;
+	text-align: center; 
+	margin: 0;
+	text-transform: uppercase;
+	padding: 1% 0;
+	font-weight: 400;
+	transition: background-color 0.8s;
+	-webkit-transition: background-color 0.8s;
+	-moz-transition: background-color 0.8s;
+	/*-o-transition: background-color 0.8s;*/
+}
+
+span {
+	font-size: 190%;
+}
+
+#display {
+	text-transform: none;
+	font-size: 10px;
+	font-weight: 700;
+	font-family: "Mali";
+	display: inline-block;
+	width: 20%;
+}
+
+#navbar {
+	background-color: white;
+	height: 30px;
+	text-align: center;
+	color: #002385;
+}
+
+.selected {
+	background-color: #bbddff;
+	color: white;
+}
+
+button {
+	margin: 0;
+	height: 100%;
+	border: none;
+	font-family: "Mali";
+	background-color: rgba(0, 0, 0, 0);
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #bbddff
+	font-size: 20px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	outline: none;
+	/*-o-transition: all 0.5s;*/
+}
+
+button:hover {
+	background-color: #bbddff;
+	color: white;
+}
+
+#mainToCG {
+	margin: 0 10%;
+	width: 80%;
+}
+
+.screen {
+	margin: none;
+	padding: none;
+}
+
+#haxInput {
+	align-content: center;
+	margin-left: 12.5%;
+	width: 50%;
+	float: left;
+}
+
+#hax {
+	width: 20%;
+	margin-left: 5%;
+	font-size: 12px;
+	display: inline;
+}
+
+#RPGToMain {
+	border-radius: 40%;
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+}
+
+.float-left {
+	float: left;
+	display: inline;
+}
+
+.float-right {
+	float: right;
+	display: inline;
+}
+
+#mainToSF {
+	width: 90%;
+	margin: 1px 5%;
+}
+
+#topBarSF {
+	height: 50px;
+	border: 2px solid silver;
+	background-color: rgba(234, 244, 123, 0.2);
+}
+
+#canvas {
+	height: 450px;
+	width: 800px;
+	margin: 50px auto;
+	border: 6px ridge gold;
+	background-color: rgba(199, 255, 234, 0.9);
+}
+
+#titleSF {
+	background-image: url('trash and the gang.jpg');
+	background-size: contain;
+	height: 438px;
+}
+
+#SFPlay {
+	margin-left: 35px; 
+	width: 240px; 
+	height: 160px; 
+	margin-top: 215px;
+	border-radius: 50%;
+	background-color: rgba(200, 255, 200, 0.8);
+	font-size: 75px;
+}
+
+.statbar {
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none;
+	display: block;
+	margin-top: 5px;
+}
+
+#charSelectText {
+	width: 400px;
+	float: left;
+}
+
+#confirm {
+	margin: 50px auto;
+	margin-top: 100px;
+	width: 200px;
+	height: 100px;
+	font-size: 38px;
+	display: block;
+}
+
+.SFscreen {
+	padding: 10px;
+	height: 438px;
+}
+
+label {
+	margin-top: 5px;
+	display: block;
+}
+
+i {
+	font-size: 25px;
+}
