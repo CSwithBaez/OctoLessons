@@ -11,7 +11,8 @@ button {
 	outline: none;
 	display: inline-block;
 	color: rgb(220, 220, 220);
-	text-shadow: rgba(200, 200, 200, 0.8);
+	text-shadow: rgba(200, 200, 200, 0.8) 1px 1px;
+	border: none;
 	/*-o-transition: all 0.5s;*/
 }
 button:hover {
@@ -21,7 +22,7 @@ button:hover {
 }
 body {
 	text-align: center;
-	text-shadow: rgba(200, 200, 200, 0.8);
+	text-shadow: rgba(200, 200, 200, 0.8) 1px 1px;
 	background-color: rgb(23, 18, 25);
 	color: rgb(220, 220, 220);
 	font-family: 'Kalam', cursive;
