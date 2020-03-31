@@ -3,6 +3,7 @@ body {
 	text-shadow: rgba(200, 200, 200, 0.8);
 	background-color: rgb(23, 18, 25);
 	color: rgb(220, 220, 220);
+	font-family: 'Kalam', cursive;
 }
 h1 {
 	margin: 3px 10%;
