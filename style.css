@@ -1,12 +1,21 @@
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+body {
+	text-align: center;
+	text-shadow: rgba(200, 200, 200, 0.8);
+	background-color: rgb(23, 18, 25);
+	color: rgb(220, 220, 220);
 }
-
-h2{
+h1 {
+	margin: 3px 10%;
+	width: 80%;
+	padding-top: 9%;
+	position: relative;
+	background-image: url(h1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
-
-p{
+p {
     font-family: Arial, Helvetica, sans-serif;
 }
