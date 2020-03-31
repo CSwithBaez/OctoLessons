@@ -6,7 +6,7 @@ var tweakColor = function(){
 	SIID = setInterval(function(){
 		tweak = Number(Math.round(Math.sin(count)*10));
 		count += 0.01;
-		bgCol = "#" + 656065 + (tweak * 10101);
+		bgCol = "#" + (656065 + (tweak * 10101));
 	}, 200)
 };
 tweakColor();
