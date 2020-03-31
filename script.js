@@ -1,15 +1,12 @@
-var bg = document.getElementsByTagName('body')[0];
+var bgCol = document.getElementsByTagName('body')[0].style.backgroundColor;
 var count = 0.0;
 var tweak = 0;
+var SIID;
 var tweakColor = function(){
-	setInterval(function(){
+	SIID = setInterval(function(){
 		tweak = Number(Math.round(Math.sin(count)*10));
 		count += 0.01;
-		bg.style.backgroundColor = 
-			"rgb(" + (65 + tweak).toString()
-			+ "," + (60 + tweak).toString() 
-			+ "," + (65 + tweak).toString() + ");";
-		return bg.style.backgroundColor;
+		bgCol = "#" + 656065 + (tweak * 10101);
 	}, 200)
 };
 tweakColor();
