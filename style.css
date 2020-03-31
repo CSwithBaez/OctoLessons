@@ -5,7 +5,7 @@ body {
 	color: rgb(220, 220, 220);
 	font-family: 'Kalam', cursive;
 }
-h1 {
+#welc {
 	margin: 3px 10%;
 	width: 80%;
 	padding-top: 9%;
@@ -26,4 +26,20 @@ td {
 	width: 80%;
 #pageLinks {
 	width: 20%;
+}
+button {
+	margin: 0;
+	width: 100%;
+	min-height: 15px;
+	font-family: "Courgette", cursive;
+	background-color: rgba(0, 0, 0, 0);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	outline: none;
+	/*-o-transition: all 0.5s;*/
+}
+button:hover {
+	background-color: #bbddff;
+	color: white;
 }
