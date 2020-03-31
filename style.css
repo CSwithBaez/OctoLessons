@@ -10,9 +10,12 @@ button {
 	-moz-transition: all 0.5s;
 	outline: none;
 	display: inline-block;
+	color: rgb(220, 220, 220);
+	text-shadow: rgba(200, 200, 200, 0.8);
 	/*-o-transition: all 0.5s;*/
 }
 button:hover {
+	text-shadow: rgb(220, 220, 220);
 	background-color: #bbddff;
 	color: white;
 }
