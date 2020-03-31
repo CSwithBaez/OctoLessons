@@ -1,3 +1,20 @@
+button {
+	margin: 0;
+	width: 100%;
+	min-height: 15px;
+	font-family: "Courgette", cursive;
+	background-color: rgba(0, 0, 0, 0);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	outline: none;
+	display: inline-block;
+	/*-o-transition: all 0.5s;*/
+}
+button:hover {
+	background-color: #bbddff;
+	color: white;
+}
 body {
 	text-align: center;
 	text-shadow: rgba(200, 200, 200, 0.8);
@@ -26,20 +43,4 @@ td {
 	width: 80%;
 #pageLinks {
 	width: 20%;
-}
-button {
-	margin: 0;
-	width: 100%;
-	min-height: 15px;
-	font-family: "Courgette", cursive;
-	background-color: rgba(0, 0, 0, 0);
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	outline: none;
-	/*-o-transition: all 0.5s;*/
-}
-button:hover {
-	background-color: #bbddff;
-	color: white;
 }
