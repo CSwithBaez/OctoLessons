@@ -19,6 +19,8 @@ table {
 	width: 94%;
 	border: 1px solid black;
 }
+#toDos {
+	width: 80%;
 #pageLinks {
 	width: 20%;
 }
