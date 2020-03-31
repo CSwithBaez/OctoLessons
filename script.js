@@ -4,6 +4,6 @@ var count = 0;
 	var SIID = setInterval(function(){
 		var HEX = Number(Math.round(Math.abs(Math.sin(count))*999999));
 		bg.style.backgroundColor = "#" + HEX;
-		count += 0.01;
+		count += 0.0003;
 	}, 200)
 })();
