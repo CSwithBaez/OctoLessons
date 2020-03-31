@@ -14,3 +14,11 @@ h1 {
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
+table {
+	margin: 2px 3%;
+	width: 94%;
+	border: 1px solid black;
+}
+#pageLinks {
+	width: 20%;
+}
