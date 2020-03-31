@@ -1,6 +1,6 @@
 var bg = document.getElementsByTagName('body')[0];
 var count = 0.0;
-(function(){
+var tweakColor = function(){
 	var SIID = setInterval(function(){
 		var tweak = Number(Math.round(Math.sin(count)*4));
 		bg.style.backgroundColor = 
@@ -9,4 +9,5 @@ var count = 0.0;
 			+ "," + (65 + tweak).toString() + ");";
 		count += 0.01;
 	}, 200)
-})();
+};
+tweakColor();
