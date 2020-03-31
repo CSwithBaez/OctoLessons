@@ -6,6 +6,6 @@ var tweakColor = function(){
 		tweak = Number(Math.round(Math.sin(count)*4));
 		count += 0.01;
 		document.getElementsByTagName('body')[0].style.backgroundColor = "#" + (251825 + (tweak * 10101));
-	}, 200)
+	}, 20)
 };
 tweakColor();
