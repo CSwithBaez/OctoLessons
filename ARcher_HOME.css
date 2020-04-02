@@ -74,6 +74,7 @@ em {
 	background-color: rgba(200, 200, 200, 0.5);
 }
 .scene {
+	margin: 0px;
 	height: 100vh;
 }
 .dark {
