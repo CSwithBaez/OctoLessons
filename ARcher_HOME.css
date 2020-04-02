@@ -92,6 +92,9 @@ em {
 .smol_text {
 	font-size: 12px;
 }
+h4 {
+	margin: 0px;
+}
 /*Color Game Stuff*/
 
 .square {
