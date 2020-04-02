@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ARcher's Beautiful Artifact </title>
+	<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mali:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="ARcher_HOME.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<script type="text/javascript" src = "ARcher_jquery.js"></script>
+</head>
+<body>
+
+
+
+	<div id = "main" class = "screen">
+		<h1> Basic Website!! </h1>
+		<hr>
+		<table>
+			<thead>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<hr class = "inTable tableTop">
+						<p> Created By: ARcheroftheseAS </p>
+						<input type="text" name="" placeholder="Enter Cheat Code" id = "haxInput">
+						<button id="hax"> USE </button>
+						<hr class = "inTable tableBottom">
+					</td>
+					<td id = "col-mid">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZkGT6LwC-_7GE4oic4V6nvIZ0gqhY8rrlrMDv0Fi5R9DHv_r" id = "homeImg">
+					</td>
+					<td>
+						<hr class = "inTable tableTop">
+						<button id = "mainToCG"> Color Game! </button>
+						<p class = "CGScoreDisplay"> Score : 0 </p>
+						<button id = "mainToSF" value = "disabled"> Bad SwordFight </button>
+						<hr class = "inTable tableBottom">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+
+	<div id = "colorGame" class = "screen">
+		<h2 id = "CGTitle"> 
+			The Great 
+			<br>
+			<span>RGB</span> 
+			<br>
+		 	Color Game 
+		</h2>
+		<h3> Note: made from tutorial, I do not claim credit for making this myself </h3>
+		<div id = "navbar">
+			<button id = "CGToMain"> Home </button>
+			<button id = "refresh"> New Colors? </button>
+			<span id = "display"> </span>
+			<button id = "easy" class = "mode">EASY</button>
+			<button id = "hard" class = "mode">HARD</button>
+		</div>
+		<div class = "container">
+			<div class = "square"></div>
+			<div class = "square"></div>
+			<div class = "square"></div>
+			<div class = "square"></div>
+			<div class = "square"></div>
+			<div class = "square"></div>
+			<p class = "CGScoreDisplay"> Score : 0 </p>
+		</div>
+	</div>
+
+
+
+	<div id = "crappySF" class = "screen SF">
+		<div id = "topBarSF" class = "SF">
+			<button id = "SFToMain" class = "float-left SF"> <i class="fas fa-home"></i> </button>
+		</div>
+		<div id = "canvas">
+			<div id = "titleSF" class = "screen SFscreen">
+				<button id = "SFPlay"> PLAY! </button>
+			</div>
+			<div id = "charSF" class = "screen SFscreen">
+				<h1> Select Character </h1>
+				<select>
+					<option> Greatsword </option>
+					<option> Longsword </option>
+					<option> Scimitar </option>
+				</select>
+				<img src="swordfight/great/run.gif" class = "float-right" height = "120px" id = "charSelectImg">
+				<label for = "DamageRelStat"> Damage: </label>
+				<progress value="100" max="100" id = "DamageRelStat" class = "statbar"></progress>
+				<label for = "SpeedRelStat"> Speed: </label>
+				<progress value="40" max="100" id = "SpeedRelStat" class = "statbar"></progress>
+				<input type="text" id="name" class = "float-right" width = "200px" placeholder = "Username" required maxlength="24">
+				<p id = "charSelectText"> Wielding a greatsword is hard work, but the times it hits are satisfying. </p>
+				<button id = "confirm"> Confirm </button>
+			</div>
+			<div id = "battleSF" class = "screen SFscreen">
+				<h1> Tutorial (0-1) </h1>
+				<div id = "info" height = "60px" width = "780px" style = "display: inline-block; min-width: 780px; min-height: 60px;">
+					<label for = "uHp" id = "uName" class = "float-left" style = "min-width: 50%; min-height: 18px; text-align: center;"></label>
+					<label for = "eHp" id = "eName" class = "float-right" style = "min-width: 50%; text-align: center;"> Sparring partner: </label>
+					<progress value="100" max="100" id = "uHp" class = "float-left" style = "margin: 0 12%"></progress>
+					<progress value="100" max="100" id = "eHp" class = "float-right" style = "margin: 0 12%"></progress>
+					<progress value="0" max="100" id = "uSpd" class = "float-left" style = "margin: 0 12%"></progress>
+					<progress value="0" max="100" id = "eSpd" class = "float-right" style = "margin: 0 12%"></progress>
+				</div>
+				<div id = "fightPlane" height = "120px" width = "780px" style = "display: inline-block; min-width: 780px;">
+					<img src="swordfight/great/run.gif" class = "float-left" id = "uChar" height = "120px" width = "120px" style = "max-width: 120px;">
+					<p style = "display: inline-block; max-width: 14px;" class = "float-left" id = "uWarn"></p>
+					<img src="swordfight/long/run.gif" class = "float-right" id = "eChar" height = "120px" width = "120px" style = "transform: scaleX(-1); -webkit-transform: scaleX(-1);
+					max-width: 120px;">
+					<p style = "display: inline-block; max-width: 14px;" class = "float-right" id = "eWarn"></p>
+				</div>
+				<div id = "textDisplay" height = "200px" width = "780px" style = "min-width: 776px; border: 2px dashed indigo; min-height: 140px; max-height: 140px; max-width: 776px;" align = "center">
+					<p id = "battleText" style = "margin: 10px auto; text-align: center;" width = "60%"> Welcome to the tutorial! Click anywhere in the box to continue. </p>
+				</div>
+				<div></div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src = "ARcher_HOME.js"></script>
+</body>
+</html>
