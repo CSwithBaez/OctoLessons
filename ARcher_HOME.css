@@ -76,6 +76,15 @@ em {
 .scene {
 	height: 100%;
 }
+.dark {
+	color: #DDDDDD;
+	background-color: #151515;
+	text-align: center;
+}
+#transition {
+	background: linear-gradient(rgba(0, 0, 0, 0), #151515);
+	color: linear-gradient(#000000, #DDDDDD);
+}
 /*Color Game Stuff*/
 
 .square {
