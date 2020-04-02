@@ -86,6 +86,9 @@ em {
 	background: linear-gradient(rgba(0, 0, 0, 0), #151515);
 	color: linear-gradient(#000000, #DDDDDD);
 }
+.smol_text {
+	font-size: 9px;
+}
 /*Color Game Stuff*/
 
 .square {
