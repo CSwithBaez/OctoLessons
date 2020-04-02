@@ -73,7 +73,9 @@ em {
 	border: 3px dashed rgba(122, 255, 200, 0.8);
 	background-color: rgba(200, 200, 200, 0.5);
 }
-
+.scene {
+	height: 100%;
+}
 /*Color Game Stuff*/
 
 .square {
