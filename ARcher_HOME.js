@@ -82,12 +82,16 @@ var screenSwitch = function(orig, next){
 }
 colorGame.css('display', 'none');
 SF.css('display', 'none');
-mainToCG.click(screenSwitch(main, colorGame));
+mainToCG.click(function(){
+	screenSwitch(main, colorGame)
+});
 CGToMain.click(function(){
 	screenSwitch(colorGame, main);
 	animateMain();
 });
-mainToSF.click(screenSwitch(main, SF));
+mainToSF.click(function(){
+	screenSwitch(main, SF)
+});
 SFToMain.click(function(){
 	screenSwitch(SF, main);
 	animateMain();
