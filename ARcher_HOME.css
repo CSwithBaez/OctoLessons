@@ -3,7 +3,7 @@
 }
 .popActivate {
 	overflow: hidden;
-	width: 30%;
+	max-width: 30%;
 }
 .popActivate:hover {
 	width: 70%;
