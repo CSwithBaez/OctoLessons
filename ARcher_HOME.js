@@ -101,7 +101,7 @@ SFToMain.click(function(){
 toggleNav.click(function(){
 	$(".fas")[0].classList.toggle('fa-angle-double-left');
 	$(".fas")[0].classList.toggle('fa-angle-double-right');
-	if (navState) {
+	if (!navState) {
 // 		iframe.css('min-width', '120px');
 		$( "iframe" ).css('width', '15%');
 		toggleNav.css('left', '16%');
