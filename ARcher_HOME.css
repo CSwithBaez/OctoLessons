@@ -12,7 +12,12 @@ h1 {
 	margin-bottom: 3%;
 }
 iframe{
-	display: inline-block;
+	position: fixed;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	border-left: 3px ridge #DFAACF;
+	width: 15%;
 }
 h3 {
 	text-align: center;
