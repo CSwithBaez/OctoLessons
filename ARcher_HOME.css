@@ -1,15 +1,9 @@
 .hidden {
 	display: none;
 }
-.popout {
-	overflow: hidden;
-	width: 0;
-	margin: 0;
-	padding: 0;
-	max-width: 0;
-}
 .popActivate {
-	width: 300px;
+	overflow: hidden;
+	width: 30%;
 }
 .popActivate:hover {
 	width: 70%;
