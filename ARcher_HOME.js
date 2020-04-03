@@ -99,13 +99,18 @@ SFToMain.click(function(){
 	animateMain();
 });
 
+var navBut = [];
 var hashes = ["top", "intro", "quetegustahacer", "", "", "communityLinks"];
 for (var i = 0; i < 6; i++){
 	var butLoc = '#' + (i + 1);
-	$(butLoc)[0].addEventListener("click", function(){
-		location.hash = hashes[i];
-	});
+	navBut.push($(butLoc));
 }
+navBut[0].click(function(){location.hash = hashes[0]});
+navBut[1].click(function(){location.hash = hashes[1]});
+navBut[2].click(function(){location.hash = hashes[2]});
+navBut[3].click(function(){location.hash = hashes[3]});
+navBut[4].click(function(){location.hash = hashes[4]});
+navBut[5].click(function(){location.hash = hashes[5]});
 
 toggleNav.click(function(){
 	$(".fas")[0].classList.toggle('fa-angle-double-left');
