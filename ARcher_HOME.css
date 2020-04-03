@@ -21,7 +21,6 @@ iframe{
 	left: 0;
 	border-left: 3px ridge #DFAACF;
 	width: 0;
-	min-width: 120px;
 }
 #navnav{
 	position: fixed;
