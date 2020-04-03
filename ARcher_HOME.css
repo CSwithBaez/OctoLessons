@@ -1,6 +1,9 @@
 .hidden {
 	display: none;
 }
+.popout {
+	display: inline;
+}
 .wideBut {
 	display: block;
 	width: 100%;
