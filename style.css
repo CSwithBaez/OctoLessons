@@ -13,6 +13,8 @@ button {
 	color: rgb(220, 220, 220);
 	text-shadow: rgba(200, 200, 200, 0.8) 1px 1px;
 	border: none;
+	font-size: 16px;
+	padding: 10px 40px;
 }
 button:hover {
 	text-shadow: rgb(220, 220, 220);
@@ -45,6 +47,8 @@ td {
 }
 #toDos {
 	width: 80%;
-#pageLinks {
-	width: 20%;
+}
+
+.pageLinks {
+	width: 20%; /* I think this may result in a smaller button size, to see effect, replace . with # */
 }
