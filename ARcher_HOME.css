@@ -20,7 +20,7 @@ iframe{
 	top: 0;
 	left: 0;
 	border-left: 3px ridge #DFAACF;
-	width: 15%;
+	width: 0;
 	min-width: 120px;
 }
 #navnav{
