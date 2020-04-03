@@ -111,7 +111,7 @@ toggleNav.click(function(){
 		$( "iframe" ).css('width', '0');
 		toggleNav.css('left', '1%');
 	} 
-	navState != navState;
+	navState = !navState;
 });
 
 // COLOR GAME CODE (MADE FROM TUTORIAL, NOT ORIGINAL IM SORRY)
