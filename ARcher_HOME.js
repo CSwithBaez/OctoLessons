@@ -98,6 +98,15 @@ SFToMain.click(function(){
 	screenSwitch(SF, main);
 	animateMain();
 });
+
+var hashes = ['top', 'intro', 'quetegustahacer', '', '', 'communityLinks'];
+for (var i = 0; i < 6; i++){
+	var butLoc = '#' + (i + 1);
+	$(butLoc).click(function(){
+		location.hash = hashes[i];
+	});
+}
+
 toggleNav.click(function(){
 	$(".fas")[0].classList.toggle('fa-angle-double-left');
 	$(".fas")[0].classList.toggle('fa-angle-double-right');
