@@ -9,7 +9,7 @@ button {
 	-webkit-transition: all 0.15s;
 	-moz-transition: all 0.15s;
 	outline: none;
-	display: inline-block;
+	display: block;
 	color: rgb(220, 220, 220);
 	text-shadow: rgba(200, 200, 200, 0.8) 1px 1px;
 	border: none;
