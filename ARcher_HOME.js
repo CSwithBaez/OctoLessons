@@ -101,18 +101,16 @@ SFToMain.click(function(){
 toggleNav.click(function(){
 	$(".fas").classList.toggle('fa-angle-double-left');
 	$(".fas").classList.toggle('fa-angle-double-right');
+	$( "iframe" ).animate({width: toggle;}, 500);
 	if (navState) {
-		$( "iframe" ).animate({width: toggle;}, 500);
 		iframe.css('min-width', '120px');
-		toggleNav.animate({left: 16%}, 500);
-		navState != navState;
+		toggleNav.animate({left: 16%;}, 500);
 	}
 	else {
-		$( "iframe" ).animate({width: toggle;}, 500);
 		iframe.css('min-width', '0px');
-		toggleNav.animate({left: 1%}, 500);
-		navState != navState;
+		toggleNav.animate({left: 1%;}, 500);
 	} 
+	navState != navState;
 });
 
 // COLOR GAME CODE (MADE FROM TUTORIAL, NOT ORIGINAL IM SORRY)
