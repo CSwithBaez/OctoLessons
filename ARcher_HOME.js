@@ -112,12 +112,12 @@ toggleNav.click(function(){
 	$(".fas")[0].classList.toggle('fa-angle-double-right');
 	if (!navState) {
 // 		iframe.css('min-width', '120px');
-		$( "iframe" ).css('width', '15%');
+		$( "#navig" ).css('width', '15%');
 		toggleNav.css('left', '16%');
 	}
 	else {
 // 		iframe.css('min-width', '0px');
-		$( "iframe" ).css('width', '0');
+		$( "#navig" ).css('width', '0');
 		toggleNav.css('left', '1%');
 	} 
 	navState = !navState;
