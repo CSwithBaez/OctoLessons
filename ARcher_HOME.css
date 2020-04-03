@@ -1,3 +1,6 @@
+.hidden {
+	display: none;
+}
 h1 {
 	color: #000000;
 	font-size: 3em;
@@ -22,7 +25,7 @@ html {
 	height: 100vh;
 	top: 0;
 	left: 0;
-	border-left: 3px ridge #DFAACF;
+	border-right: 3px ridge #DFAACF;
 	width: 0;
 }
 #navnav{
