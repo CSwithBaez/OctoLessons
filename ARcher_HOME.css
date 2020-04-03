@@ -31,7 +31,7 @@ iframe{
 	width: 7%;
 	height: 7%;
 	border-radius: 20%;
-	background-color: #42BCBC;
+	background-color: rgba(162, 230, 230, 0.6);
 }
 h3 {
 	text-align: center;
