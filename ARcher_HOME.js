@@ -102,10 +102,12 @@ toggleNav.click(function(){
 	$(".fas").classList.toggle('fa-angle-double-left');
 	$(".fas").classList.toggle('fa-angle-double-right');
 	if (navState) {
-		$( "iframe" ).animate({width = 15%}, 500);
+		$( "iframe" ).animate({width: 15%}, 500);
+		toggleNav.animate({left: 16%}, 500);
 	}
 	else {
-		$( "iframe" ).animate({width = 0}, 500);
+		$( "iframe" ).animate({width: 0}, 500);
+		toggleNav.animate({left: 1%}, 500);
 	} 
 });
 
