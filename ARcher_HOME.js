@@ -37,8 +37,6 @@ var count = 0;
 var CGScore = 0;
 var haxBtn = document.querySelector('#hax');
 
-document.querySelector('#homeImg').css('object-fit', 'scale-down');
-
 haxBtn.addEventListener('click', function(){
 	if ($('input')[0].value === "hax" && CGScore < 9999) {
 		CGScore += 9999;
