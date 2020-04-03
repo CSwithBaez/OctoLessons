@@ -5,20 +5,20 @@ var linkToFav = $('#4');
 var linkToChieve = $('#5');
 var linkToComm = $('#6');
 linkToTop.click(function(){
-	top.window.location = "#top";
+	top.location.hash = "top";
 });
 linkToIntro.click(function(){
-	top.window.location = "#intro";
+	top.location.hash = "intro";
 });
 linkToHacer.click(function(){
-	top.window.location = "#quetegustahacer";
+	top.location.hash = "quetegustahacer";
 });
 linkToFav.click(function(){
-	top.window.location = "#";
+	top.location.hash = "";
 });
 linkToChieve.click(function(){
-	top.window.location = "#";
+	top.location.hash = "";
 });
 linkToComm.click(function(){
-	top.window.location = "#communityLinks";
+	top.location.hash = "communityLinks";
 });
