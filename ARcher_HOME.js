@@ -101,14 +101,14 @@ SFToMain.click(function(){
 toggleNav.click(function(){
 	$(".fas").classList.toggle('fa-angle-double-left');
 	$(".fas").classList.toggle('fa-angle-double-right');
-	$( "iframe" ).animate({width: toggle,}, 500);
+	$( "iframe" ).animate({width: toggle}, 500);
 	if (navState) {
 // 		iframe.css('min-width', '120px');
-		toggleNav.animate({left: 16%,}, 500);
+		toggleNav.animate({left: 16%}, 500);
 	}
 	else {
 // 		iframe.css('min-width', '0px');
-		toggleNav.animate({left: 1%,}, 500);
+		toggleNav.animate({left: 1%}, 500);
 	} 
 	navState != navState;
 });
