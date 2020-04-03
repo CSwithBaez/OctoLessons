@@ -99,8 +99,8 @@ SFToMain.click(function(){
 	animateMain();
 });
 toggleNav.click(function(){
-	$(".fas").classList.toggle('fa-angle-double-left');
-	$(".fas").classList.toggle('fa-angle-double-right');
+	$(".fas")[0].classList.toggle('fa-angle-double-left');
+	$(".fas")[0].classList.toggle('fa-angle-double-right');
 	if (navState) {
 // 		iframe.css('min-width', '120px');
 		$( "iframe" ).css('width', '15%');
