@@ -2,7 +2,7 @@
 	display: none;
 }
 .popout {
-	display: inline;
+	overflow: auto;
 }
 .wideBut {
 	display: block;
