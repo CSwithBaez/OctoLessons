@@ -8,6 +8,12 @@
 	padding: 0;
 	max-width: 0;
 }
+.popActivate {
+	width: 300px;
+}
+.popActivate:hover {
+	width: 70%;
+}
 .wideBut {
 	display: block;
 	width: 100%;
