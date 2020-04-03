@@ -1,6 +1,10 @@
 .hidden {
 	display: none;
 }
+.wideBut {
+	display: block;
+	width: 100%;
+}
 h1 {
 	color: #000000;
 	font-size: 3em;
@@ -192,9 +196,7 @@ span {
 }
 
 button {
-	display: block;
 	margin: 0;
-	width: 100%;
 	border: none;
 	font-family: "Mali";
 	background-color: rgba(0, 0, 0, 0);
