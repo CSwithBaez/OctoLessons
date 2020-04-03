@@ -103,11 +103,15 @@ toggleNav.click(function(){
 	$(".fas").classList.toggle('fa-angle-double-right');
 	if (navState) {
 		$( "iframe" ).animate({width: 15%}, 500);
+		iframe.css('min-width', '120px');
 		toggleNav.animate({left: 16%}, 500);
+		navState != navState;
 	}
 	else {
 		$( "iframe" ).animate({width: 0}, 500);
+		iframe.css('min-width', '0px');
 		toggleNav.animate({left: 1%}, 500);
+		navState != navState;
 	} 
 });
 
