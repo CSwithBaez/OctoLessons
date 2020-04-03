@@ -17,7 +17,7 @@ h1 {
 html {
 	scroll-behavior: smooth;
 }
-iframe{
+#navig{
 	position: fixed;
 	height: 100vh;
 	top: 0;
