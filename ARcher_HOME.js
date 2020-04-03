@@ -76,6 +76,8 @@ var mainToCG = $('#mainToCG');
 var mainToSF = $('#mainToSF');
 var CGToMain = $('#CGToMain');
 var SFToMain = $('#SFToMain');
+var toggleNav = $('#navnav');
+var navState = false;
 var screenSwitch = function(orig, next){
 	orig.css('display', 'none');
 	next.css('display', 'block');
@@ -95,6 +97,16 @@ mainToSF.click(function(){
 SFToMain.click(function(){
 	screenSwitch(SF, main);
 	animateMain();
+});
+toggleNav.click(function(){
+	$(".fas").classList.toggle('fa-angle-double-left');
+	$(".fas").classList.toggle('fa-angle-double-right');
+	if (navState) {
+		$( "iframe" ).animate({width = 15%}, 500);
+	}
+	else {
+		$( "iframe" ).animate({width = 0}, 500);
+	} 
 });
 
 // COLOR GAME CODE (MADE FROM TUTORIAL, NOT ORIGINAL IM SORRY)
