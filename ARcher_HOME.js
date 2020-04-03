@@ -102,7 +102,7 @@ SFToMain.click(function(){
 var hashes = ["top", "intro", "quetegustahacer", "", "", "communityLinks"];
 for (var i = 0; i < 6; i++){
 	var butLoc = '#' + (i + 1);
-	$(butLoc).addEventListener("click", function(){
+	$(butLoc)[0].addEventListener("click", function(){
 		location.hash = hashes[i];
 	});
 }
