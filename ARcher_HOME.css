@@ -27,6 +27,7 @@ html {
 	left: 0;
 	border-right: 3px ridge #DFAACF;
 	width: 0;
+	overflow: auto;
 }
 #navnav{
 	position: fixed;
