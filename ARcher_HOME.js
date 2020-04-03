@@ -106,14 +106,14 @@ for (let i = 0; i < 6; i++){
 }
 
 var popTables = document.querySelectorAll(".popActivate");
-// popTables.forEach(function(Val){
-// 	Val.addEventListener(mouseover, function(){
-// 		Val.querySelector(".popout").style.display = "block";
-// 	}
-// 	Val.addEventListener(mouseout, function(){
-// 		Val.querySelector(".popout").style.display = "hidden";
-// 	}
-// });
+popTables.forEach(function(Val){
+	Val.addEventListener("mouseover", function(){
+		Val.querySelector(".popout").style.width = "30%";
+	});
+	Val.addEventListener("mouseout", function(){
+		Val.querySelector(".popout").style.width = "0";
+	});
+});
 
 toggleNav.click(function(){
 	$(".fas")[0].classList.toggle('fa-angle-double-left');
