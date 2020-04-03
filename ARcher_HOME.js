@@ -78,12 +78,6 @@ var mainToCG = $('#mainToCG');
 var mainToSF = $('#mainToSF');
 var CGToMain = $('#CGToMain');
 var SFToMain = $('#SFToMain');
-var linkToTop = $('#1');
-var linkToIntro = $('#2');
-var linkToHacer = $('#3');
-var linkToFav = $('#4');
-var linkToChieve = $('#5');
-var linkToComm = $('#6');
 var screenSwitch = function(orig, next){
 	orig.css('display', 'none');
 	next.css('display', 'block');
@@ -99,24 +93,6 @@ mainToSF.click(screenSwitch(main, SF));
 SFToMain.click(function(){
 	screenSwitch(SF, main);
 	animateMain();
-});
-linkToTop.click(function(){
-	window.location = "#top";
-});
-linkToIntro.click(function(){
-	window.location = "#intro";
-});
-linkToHacer.click(function(){
-	window.location = "#quetegustahacer";
-});
-linkToFav.click(function(){
-	window.location = "#";
-});
-linkToChieve.click(function(){
-	window.location = "#";
-});
-linkToComm.click(function(){
-	window.location = "#communityLinks";
 });
 
 // COLOR GAME CODE (MADE FROM TUTORIAL, NOT ORIGINAL IM SORRY)
