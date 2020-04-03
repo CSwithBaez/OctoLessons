@@ -37,7 +37,7 @@ var count = 0;
 var CGScore = 0;
 var haxBtn = document.querySelector('#hax');
 
-$('#homeImg').css('object-fit', 'scale-down');
+document.querySelector('#homeImg').css('object-fit', 'scale-down');
 
 haxBtn.addEventListener('click', function(){
 	if ($('input')[0].value === "hax" && CGScore < 9999) {
@@ -78,27 +78,46 @@ var mainToCG = $('#mainToCG');
 var mainToSF = $('#mainToSF');
 var CGToMain = $('#CGToMain');
 var SFToMain = $('#SFToMain');
+var linkToTop = $('#1');
+var linkToIntro = $('#2');
+var linkToHacer = $('#3');
+var linkToFav = $('#4');
+var linkToChieve = $('#5');
+var linkToComm = $('#6');
 var screenSwitch = function(orig, next){
 	orig.css('display', 'none');
 	next.css('display', 'block');
 }
 colorGame.css('display', 'none');
 SF.css('display', 'none');
-mainToCG.click(function(){
-	screenSwitch(main, colorGame);
-});
+mainToCG.click(screenSwitch(main, colorGame));
 CGToMain.click(function(){
 	screenSwitch(colorGame, main);
 	animateMain();
 });
-mainToSF.click(function(){
-	screenSwitch(main, SF);
-});
+mainToSF.click(screenSwitch(main, SF));
 SFToMain.click(function(){
 	screenSwitch(SF, main);
 	animateMain();
 });
-
+linkToTop.click(function(){
+	window.location = "#top";
+});
+linkToIntro.click(function(){
+	window.location = "#intro";
+});
+linkToHacer.click(function(){
+	window.location = "#quetegustahacer";
+});
+linkToFav.click(function(){
+	window.location = "#";
+});
+linkToChieve.click(function(){
+	window.location = "#";
+});
+linkToComm.click(function(){
+	window.location = "#communityLinks";
+});
 
 // COLOR GAME CODE (MADE FROM TUTORIAL, NOT ORIGINAL IM SORRY)
 
