@@ -103,13 +103,13 @@ toggleNav.click(function(){
 	$(".fas").classList.toggle('fa-angle-double-right');
 	if (navState) {
 // 		iframe.css('min-width', '120px');
-		$( "iframe" ).animate({width: +=15%}, 500);
-		toggleNav.animate({left: +=15%}, 500);
+		$( "iframe" ).css('width', '15%');
+		toggleNav.css('left', '16%');
 	}
 	else {
 // 		iframe.css('min-width', '0px');
-		$( "iframe" ).animate({width: -=15%}, 500);
-		toggleNav.animate({left: -=15%}, 500);
+		$( "iframe" ).css('width', '0');
+		toggleNav.css('left', '1%');
 	} 
 	navState != navState;
 });
