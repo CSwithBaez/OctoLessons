@@ -192,6 +192,7 @@ span {
 }
 
 button {
+	display: block;
 	margin: 0;
 	border: none;
 	font-family: "Mali";
