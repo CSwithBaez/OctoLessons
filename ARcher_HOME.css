@@ -5,6 +5,9 @@
 	width: 0;
 	max-width: 0;
 	overflow: hidden;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
 }
 .wideBut {
 	display: block;
@@ -29,9 +32,6 @@ h1 {
 }
 html {
 	scroll-behavior: smooth;
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
 }
 #navig{
 	position: fixed;
