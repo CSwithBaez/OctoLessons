@@ -1,12 +1,13 @@
 .hidden {
 	display: none;
 }
-.popActivate {
+.popout {
+	width: 0;
+	max-width: 0;
 	overflow: hidden;
-	max-width: 30%;
 }
-.popActivate:hover {
-	width: 70%;
+.popActivate {
+	border: none;
 }
 .wideBut {
 	display: block;
