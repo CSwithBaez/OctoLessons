@@ -3,6 +3,9 @@
 }
 .popout {
 	overflow: auto;
+	width: 0;
+	margin: 0;
+	padding: 0;
 }
 .wideBut {
 	display: block;
