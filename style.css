@@ -15,6 +15,21 @@ button {
     border: none;
     font-size: 16px;
     padding: 10px 40px;
+
+	margin: 0;
+	width: 100%;
+	min-width: 15px;
+	min-height: 15px;
+	font-family: "Courgette", cursive;
+	background-color: rgba(0, 0, 0, 0);
+	transition: all 0.15s;
+	-webkit-transition: all 0.15s;
+	-moz-transition: all 0.15s;
+	outline: none;
+	display: block;
+	color: rgb(220, 220, 220);
+	text-shadow: rgba(200, 200, 200, 0.8) 1px 1px;
+	border: none;
 }
 button:hover {
     text-shadow: rgb(220, 220, 220);
