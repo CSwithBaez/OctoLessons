@@ -5,9 +5,9 @@
 	width: 0;
 	max-width: 0;
 	overflow: hidden;
-	transition: all 0.2s;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
+	transition: width 0.1s;
+	-webkit-transition: width 0.1s;
+	-moz-transition: width 0.1s;
 }
 .wideBut {
 	display: block;
