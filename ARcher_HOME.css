@@ -5,7 +5,7 @@
 	width: 0;
 	max-width: 0;
 	overflow: hidden;
-	transition: width 0.2s;
+	transition: width 0.1s;
 }
 .wideBut {
 	display: block;
