@@ -1,61 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
     <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+      p{
+        text-align: left;
+      }
+      li{
+        text-align: left;
+      }
+    </style>
   </head>
   
   <body>
-    
-    <main>
 
-      <h1>~Welcome~</h1>
-      <p style="text-align: center;">This is MintAloe's test page, I hope that you're well. <br> 
-        I've included what could be some helpful information for those looking to code on the site. <br> 
-        Please enjoy!
-      </p>  
+      <table>
+       <thead><tr><th colspan="4">
+          <h1>OCTOLESSONS</h1>
+        </th></tr></thead>
 
-      <h2>GitHub and GitKraken, Notes to Self</h2>
-      <p>The following are instructions on GitHub and GitKraken:</p>
-      <ol>
-        <li>Make sure that your document is properly saved, it may be accidently overwritten in the process.</li>
-        <li>Open GitKraken and look for the <em>pull</em> button ontop, <strong>not to be confused with pull request.</strong></li>
-        <li>Click on the arrow and do a <em>Rebase Pull</em> in order to sync up with everyone else's work, this is where your stuff might be overwritten.</li>
-        <li>Click on your branch on the tree and stage your changes, adding a concise description</li>
-        <li>Commit your changes and click the <em>push</em> button next to the pull button</li>
-        <li>Now look at the sidebar and make a <em>pull request (+)</em>, it will go from your repository to GHS Game Design</li>
-        <li>If the push is successful, congradulations, you are done. If not... Good luck. Our thoughts and prayers go with you.</li>
-      </ol>
-
-      <br>
-
-      <h2>HTML Notes</h2>
-      <p>My <a href="https://docs.google.com/document/d/1bNd_0P39MLmeqyiYhy9h6VcHy4cO4MwrhpIxK4TnfH8/edit?usp=sharing">HTML Notes</a> 
-        can be found online. If you would like to view, please contact me on the devteam chat. I do apologise for the 
-        inconvience, however, the examples are directly from CodeAcademy and thus, I'm not sure that I can publish it online.
-      </p>
-
-      <br>
-
-      <h2>CSS Notes</h2>
-      <p>I do have some <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CSS Notes</a>
-      At the moment, however, due to their measley state, I'm afraid that I would not reccomend them, as evidenced
-      by this graphic masterpiece of a page. Nevertheless, if you would like to indulge your morbid curioursity, 
-      I <em>encourage</em> you to check it out.</p>
-    </main>
+        <tbody>
+          <tr>
+            <td>
+              <h2>
+                <h1>~Welcome~</h1>
+                <p style="text-align: center;">This is MintAloe's test page, I hope that you're well. <br> 
+                  I've included what could be some helpful information for those looking to code on the site. <br> 
+                  Please enjoy!
+                </p>  
+          
+                <h2>GitHub and GitKraken, Notes to Self</h2>
+                <p class="left">The following are instructions on GitHub and GitKraken:</p>
+                <ol class="left">
+                  <li>Make sure that your document is properly saved, it may be accidently overwritten in the process.</li>
+                  <li>Open GitKraken and look for the <em>pull</em> button ontop, <strong>not to be confused with pull request.</strong></li>
+                  <li>Click on the arrow and do a <em>Rebase Pull</em> in order to sync up with everyone else's work, this is where your stuff might be overwritten.</li>
+                  <li>Click on your branch on the tree and stage your changes, adding a concise description</li>
+                  <li>Commit your changes and click the <em>push</em> button next to the pull button</li>
+                  <li>Now look at the sidebar and make a <em>pull request (+)</em>, it will go from your repository to GHS Game Design</li>
+                  <li>If the push is successful, congradulations, you are done. If not... Good luck. Our thoughts and prayers go with you.</li>
+                </ol>
+          
+                <br>
+          
+                <h2>HTML Notes</h2>
+                <p class="left">My <a href="https://docs.google.com/document/d/1bNd_0P39MLmeqyiYhy9h6VcHy4cO4MwrhpIxK4TnfH8/edit?usp=sharing">HTML Notes</a> 
+                  can be found online. They are quite basic, but if you would like to view, please contact me on the devteam chat. 
+                  I do apologise for the inconvience, however, the examples are directly from CodeAcademy and thus, I'm not sure 
+                  that I can publish it online.
+                </p>
+          
+                <br>
+          
+                <h2>CSS Notes</h2>
+                <p class="left">I do have some <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CSS Notes</a>
+                At the moment, however, due to their measley state, I'm afraid that I would not reccomend them. 
+                Nevertheless, if you would like to indulge your morbid curioursity, I <em>encourage</em> you to check 
+                it out.</p>
+              </h2>
+            </td>
+            <td valign="top">
+              <h2>Other Pages</h2>
+              <div id="pageLinks">
+                <button onclick="window.location.href='index.html';">Index</button>
+                <button onclick="window.location.href='devteams.html';">Dev with me</button>
+                <button onclick="window.location.href='SoLo\'s_Game.html';">Play SoLo's Game!</button>
+                <button onclick="window.location.href='Baeztech.html';">Baeztech Portal</button>
+                <button onclick="window.location.href='23jcao.html';">23jcao Portal</button>
+                <button onclick="window.location.href='ARcher_HOME.html';">ARcher Portal</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
     <footer>
      <a href="index.html">Index</a> <a href="First.html">First</a> 
     </footer>
-    
-  </body>
-<!-- 
 
-  <head></head>
-  
-  <body>
-    <h1>Greetings!</h1>
-    <p>This is MintAloe's test page. <br>
-    How are you?</p>
+    <script type="text/javascript" src = "script.js"></script>
   </body>
- -->
 </html>

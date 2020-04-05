@@ -1,0 +1,76 @@
+body{
+   margin: 0; 
+   padding: 0;
+   font-family: sans-serif;
+   /*background-color: rgb(129, 190, 153);*/
+}
+
+.banner{
+    width: 100%; /* 100% of the browser */
+    display: block;
+    padding: none;
+    margin: none;
+}
+
+.banner .banner-img{
+     width: 100%;
+     /*height: 450px;*/
+     height: auto;
+     display: block;
+     position: relative;
+     margin: 0 auto;
+}
+
+.banner .banner-txt{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+    background-color: white;
+    background-color: rgba(159, 168, 170, 0.5);
+    padding: 50px 50px 50px 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+.logo{
+    float: left;
+    padding-left: 15px;
+   
+}
+
+.logo a{
+    text-decoration: none;
+    color:rgb(77, 192, 134); 
+    /*font-weight: bold;*/
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo a:hover{
+    font-weight: bolder;
+}
+
+#nav{
+    background-color: rgb(240, 240, 240);
+    padding: 20px 0px 20px 0px;
+    list-style: none;
+    color: slategray;
+    text-align: right;
+    font-style: italic;
+    margin-bottom: none;
+}
+
+#nav li{
+    display: inline-block;
+    padding-right: 25px;
+}
+
+#nav li a{
+    text-decoration: none;
+    color: slategray;
+}
+
+#nav li a:hover{
+    color: rgb(77, 192, 134);
+    font-weight: bold;
+}
