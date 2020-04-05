@@ -69,7 +69,6 @@ body {
 }
 tbody {
 	border-collapse: collapse;
-	border: 5px outset #ffcccc;
 	padding: 2%;
 }
 table {
@@ -77,6 +76,7 @@ table {
 	max-height: 475px;
 	max-width: 768px;
 	margin: 0px auto;
+	border: 2px outset #ffcccc;
 }
 img {
 	width: 80%;
