@@ -1,3 +1,19 @@
+.hidden {
+	display: none;
+}
+.popout {
+	width: 0;
+	max-width: 0;
+	overflow: hidden;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+}
+.wideBut {
+	display: block;
+	width: 100%;
+	height: auto;
+}
 h1 {
 	color: #000000;
 	font-size: 3em;
@@ -11,6 +27,35 @@ h1 {
 	margin-top: 3%;
 	margin-bottom: 3%;
 }
+#homeImg {
+	object-fit: scale-down;
+}
+html {
+	scroll-behavior: smooth;
+}
+#navig{
+	position: fixed;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	border-right: 3px ridge #DFAACF;
+	width: 0;
+	overflow: auto;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+#navnav{
+	position: fixed;
+	max-width: 64px;
+	max-height: 64px;
+	left: 1%;
+	top: 3px;
+	width: 7%;
+	height: 7%;
+	border-radius: 20%;
+	background-color: rgba(162, 230, 230, 0.6);
+}
 h3 {
 	text-align: center;
 }
@@ -18,22 +63,24 @@ body {
 	background: url("https://static.vecteezy.com/system/resources/previews/000/101/237/non_2x/free-abstract-background-11-vector.jpg") no-repeat center center fixed;
 	height: 100%;
 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0;
-    font-family: 'Averia Serif Libre';
+   	-moz-background-size: cover;
+    	-o-background-size: cover;
+    	background-size: cover;
+    	margin: 0;
+	min-width: 450px;
+    	font-family: 'Averia Serif Libre';
 }
 tbody {
 	border-collapse: collapse;
-	border-width: 0.5em
-	border-style: outset;
-	border-color: #ffcccc;
+	border: 2px outset #ffcccc;
 	box-shadow: 1px 1px 1px 0.1em #f0ccf0;
 	padding: 2%;
 }
 table {
-	margin: 5% auto;
+	height: 80%;
+	max-height: 475px;
+	max-width: 768px;
+	margin: 0px auto;
 }
 img {
 	width: 100%;
@@ -50,16 +97,24 @@ td {
 }
 hr {
 	border: 0; 
-	height: 1px; 
+	height: 3px; 
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 233, 100, 0.75), rgba(0, 0, 0, 0));
-	padding-bottom: 5%;
 }
 .inTable {
-	height: 6px;
-	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-    border: 0;
-    margin: 3%;
-    padding-bottom: 0;
+    	overflow: visible;
+    	border-style: solid;
+    	border-color: black;
+    	border-width: 1px 0 0 0;
+	margin: none;
+	background-image: none;
+}
+.inTable:before { /* hr style from https://css-tricks.com/examples/hrs/, #7 */
+    	display: block;
+    	content: "";
+    	border-style: solid;
+    	border-color: black;
+    	border-width: 0 0 1px 0;
+    	border-radius: 20px;
 }
 p {
 	margin: auto;
@@ -73,7 +128,26 @@ em {
 	border: 3px dashed rgba(122, 255, 200, 0.8);
 	background-color: rgba(200, 200, 200, 0.5);
 }
-
+.scene {
+	padding 10% 3px;
+	height: 100vh;
+}
+.dark {
+	color: #DDDDDD;
+	background-color: #151515;
+	text-align: center;
+	margin: 0px;
+}
+#intro {
+	background: linear-gradient(rgba(0, 0, 0, 0), #151515, #151515, #151515, #151515);
+	color: #D0D0D0;
+}
+.smol_text {
+	font-size: 12px;
+}
+h4 {
+	margin: 0px;
+}
 /*Color Game Stuff*/
 
 .square {
@@ -135,8 +209,8 @@ span {
 
 button {
 	margin: 0;
-	height: 100%;
 	border: none;
+	height: 100%;
 	font-family: "Mali";
 	background-color: rgba(0, 0, 0, 0);
 	text-transform: uppercase;
