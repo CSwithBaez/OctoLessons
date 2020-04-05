@@ -69,8 +69,7 @@ body {
 }
 tbody {
 	border-collapse: collapse;
-	border: 2px outset #ffcccc;
-	box-shadow: 1px 1px 1px 0.1em #f0ccf0;
+	border: 5px outset #ffcccc;
 	padding: 2%;
 }
 table {
