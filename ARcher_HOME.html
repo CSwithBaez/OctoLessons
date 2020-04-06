@@ -1,48 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script type="text/javascript" src = "ARcher_jquery.js"></script>
 	<title> ARcher's Beautiful Artifact </title>
 	<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,400i,700,700i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Mali:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="ARcher_HOME.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<script type="text/javascript" src = "ARcher_jquery.js"></script>
 </head>
 <body>
-
-
-
 	<div id = "main" class = "screen">
-		<h1> Basic Website!! </h1>
-		<hr>
-		<table>
-			<thead>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<hr class = "inTable tableTop">
-						<p> Created By: ARcheroftheseAS </p>
-						<input type="text" name="" placeholder="Enter Cheat Code" id = "haxInput">
-						<button id="hax"> USE </button>
-						<hr class = "inTable tableBottom">
-					</td>
-					<td id = "col-mid">
-						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZkGT6LwC-_7GE4oic4V6nvIZ0gqhY8rrlrMDv0Fi5R9DHv_r" id = "homeImg">
-					</td>
-					<td>
-						<hr class = "inTable tableTop">
-						<button id = "mainToCG"> Color Game! </button>
-						<p class = "CGScoreDisplay"> Score : 0 </p>
-						<button id = "mainToSF" value = "disabled"> Bad SwordFight </button>
-						<hr class = "inTable tableBottom">
-					</td>
-				</tr>
-			</tbody>
-		</table>
+		<div id = "navig" class = "dark">
+  			<h2 height = "15vh" class = "wideBut"> Navigation </h2>
+			<button id = "1" class = "wideBut"> Main </button>
+			<button id = "2" class = "wideBut"> Who I am </button>
+			<button id = "3" class = "wideBut"> What I do </button>
+    			<button id = "4" class = "wideBut"> Fav. Song </button> 
+   			<button id = "5" class = "wideBut"> Achievement Gallery </button>
+			<button id = "6" class = "wideBut"> Other links </button>
+		</div>
+		<button id = "navnav"><i class="fas fa-angle-double-right"></i></button>
+		<div id = "top" class = "scene defaul"><a name = "top">
+			<h1> Basic Website!! </h1>
+			<hr>
+			<table><thead></thead><tbody><tr><td>
+				<hr class = "inTable tableTop">
+				<p> Created By: ARcheroftheseAS </p>
+				<input type="text" name="" placeholder="Enter Cheat Code" id = "haxInput">
+				<button id="hax"> USE </button>
+				<hr class = "inTable tableBottom">
+			</td>
+			<td id = "col-mid">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZkGT6LwC-_7GE4oic4V6nvIZ0gqhY8rrlrMDv0Fi5R9DHv_r" id = "homeImg">
+			</td>
+			<td>
+				<hr class = "inTable tableTop">
+				<button id = "mainToCG"> Color Game! </button>
+				<p class = "CGScoreDisplay"> Score : 0 </p>
+				<button id = "mainToSF" value = "disabled"> Bad SwordFight </button>
+				<hr class = "inTable tableBottom">
+			</td></tr></tbody></table>
+		</a></div>
+		<div id = "intro" class = "scene"><a name = "intro">
+			<table><thead><th colspan="3">
+				<h2> Who I am </h2>
+				<hr>
+			</th></thead>
+			<tbody class = "dark"><tr><td>
+				<img>
+				<h4> Jack of [most] coding langs.</h4>
+				<p class = "smol_text"> I write my HTML, CSS, JS, and a little C# and Python with the help of documentation. Yay documentation! </p>
+			</td>
+			<td>
+				<img>
+				<h4> Blitzkrieg student </h4>
+				<p class = "smol_text"> Get assignment, finish assignment. Might as well, more time for me to do other things </p>
+			</td>
+			<td>
+				<img>
+				<h4> Complete F2P gamer </h4>
+				<p class = "smol_text"> Haven't purchased a game or in-game items ever. I can get by without them, I'm not in a rush to win </p>
+			</td></tr></tbody></table>
+		</a></div>
+		<div id = "quetegustahacer" class = "scene dark"><a name = "quetegustahacer">
+			<table><thead><th colspan="3">
+				<h2> What I do </h2>
+				<hr>
+			</th></thead>
+			<tbody><tr><td>
+				<img>
+				<h4> Play </h4>
+				<p class = "smol_text"> Free time? Grind time. </p>
+			</td>
+			<td>
+				<img>
+				<h4> Create </h4>
+				<p class = "smol_text"> Put in sweat, tears (no blood, sorry), get out... whatever it ends up being. </p>
+			</td>
+			<td>
+				<img>
+				<h4> Watch </h4>
+				<p class = "smol_text"> Entertain myself with others. My own brain can only go so far, right? </p>
+			</td></tr></tbody></table>
+		</a></div>
+		<div id = "favS" class = "scene dark"><a name = "favS">
+			<table style = "width: 85%;"><tr>
+			<td rowspan = "3">
+				<h2> My <br> favorite <br> songs </h2>
+			</td><td class = "popActivate">
+				<table style = "margin-right: 0;"><tbody style = "box-shadow: none;"><td style = "width: min-content;">
+				<iframe src="https://www.youtube.com/embed/bWUxyOIUspk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</td><td class = "popout">
+				<h4> Nightcore - Phoenix </h4>
+				<p class = "smol_text"> League of Legends <br> + Nightcore Lab </p>
+				</td></tbody></table>
+			</td></tr>
+			<tr><td class = "popActivate">
+				<table style = "margin-right: 0;"><tbody style = "box-shadow: none;"><td style = "width: min-content;">
+				<iframe src="https://www.youtube.com/embed/5fSYGKYDK5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</td><td class = "popout">
+				<h4> Self Made </h4>
+				<p class = "smol_text"> NEFFEX </p>
+				</td></tbody></table>
+			</td></tr>
+			<tr><td class = "popActivate">
+				<table style = "margin-right: 0;"><tbody style = "box-shadow: none;"><td style = "width: min-content;">
+				<iframe src="https://www.youtube.com/embed/Mquzb5OLdd0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</td><td class = "popout">
+				<h4> Gossip </h4>
+				<p class = "smol_text"> NEFFEX <br> Note: sketch lyrics </p>
+				</td></tbody></table>
+			</td></tr></tbody></table>
+		</a></div>
+		<footer id = "communityLinks" class = "dark"><a name = "communityLinks">
+			<h4> Contact me: </h4>
+			<p class = "smol_text"> On Discord - ARcheroftheseAS#7712 </p>
+			<p class = "smol_text"> On anything else - nah don't bother </p>
+		</a></footer>
 	</div>
 
-
+<!-- Color Game, not part of main -->
 
 	<div id = "colorGame" class = "screen">
 		<h2 id = "CGTitle"> 
@@ -71,7 +148,7 @@
 		</div>
 	</div>
 
-
+<!-- *pretty much* discarded, not part of main -->
 
 	<div id = "crappySF" class = "screen SF">
 		<div id = "topBarSF" class = "SF">

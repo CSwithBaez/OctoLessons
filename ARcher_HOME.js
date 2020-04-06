@@ -37,8 +37,6 @@ var count = 0;
 var CGScore = 0;
 var haxBtn = document.querySelector('#hax');
 
-$('#homeImg').css('object-fit', 'scale-down');
-
 haxBtn.addEventListener('click', function(){
 	if ($('input')[0].value === "hax" && CGScore < 9999) {
 		CGScore += 9999;
@@ -78,6 +76,8 @@ var mainToCG = $('#mainToCG');
 var mainToSF = $('#mainToSF');
 var CGToMain = $('#CGToMain');
 var SFToMain = $('#SFToMain');
+var toggleNav = $('#navnav');
+var navState = false;
 var screenSwitch = function(orig, next){
 	orig.css('display', 'none');
 	next.css('display', 'block');
@@ -85,20 +85,51 @@ var screenSwitch = function(orig, next){
 colorGame.css('display', 'none');
 SF.css('display', 'none');
 mainToCG.click(function(){
-	screenSwitch(main, colorGame);
+	screenSwitch(main, colorGame)
 });
 CGToMain.click(function(){
 	screenSwitch(colorGame, main);
 	animateMain();
 });
 mainToSF.click(function(){
-	screenSwitch(main, SF);
+	screenSwitch(main, SF)
 });
 SFToMain.click(function(){
 	screenSwitch(SF, main);
 	animateMain();
 });
 
+var hashes = ["top", "intro", "quetegustahacer", "favS", "", "communityLinks"];
+for (let i = 0; i < 6; i++){
+	var butLoc = '#' + (i + 1);
+	$(butLoc).click(function(){location.hash = hashes[i]});
+}
+
+var popTables = document.querySelectorAll(".popActivate");
+popTables.forEach(function(Val){
+	Val.addEventListener("mouseover", function(){
+		Val.querySelector(".popout").style.width = "30%";
+	});
+	Val.addEventListener("mouseout", function(){
+		Val.querySelector(".popout").style.width = "0";
+	});
+});
+
+toggleNav.click(function(){
+	$(".fas")[0].classList.toggle('fa-angle-double-left');
+	$(".fas")[0].classList.toggle('fa-angle-double-right');
+	if (!navState) {
+// 		iframe.css('min-width', '120px');
+		$( "#navig" ).css('width', '15%');
+		toggleNav.css('left', '16%');
+	}
+	else {
+// 		iframe.css('min-width', '0px');
+		$( "#navig" ).css('width', '0');
+		toggleNav.css('left', '1%');
+	} 
+	navState = !navState;
+});
 
 // COLOR GAME CODE (MADE FROM TUTORIAL, NOT ORIGINAL IM SORRY)
 
