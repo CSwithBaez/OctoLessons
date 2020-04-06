@@ -1,7 +1,16 @@
 .hidden {
 	display: none;
 }
-
+#iMEIndicator {
+	position: absolute;
+}
+#iMETarget {
+	position: absolute;
+	height: 100vh;
+	width: 100vh;
+	top: 0;
+	left: 0;
+}
 .blank {
 	border: none;
 	padding: 0;
