@@ -1,6 +1,21 @@
 .hidden {
 	display: none;
 }
+#iMEIndicator {
+	position: absolute;
+}
+#iMETarget {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+}
+.blank {
+	border: none;
+	padding: 0;
+	max-height: none;
+}
 .popout {
 	width: 0;
 	max-width: 0;
@@ -131,7 +146,7 @@ em {
 	margin: 0px;
 }
 #intro {
-	background: linear-gradient(rgba(0, 0, 0, 0), #151515, #151515, #151515, #151515);
+	background: linear-gradient(rgba(15, 15, 15, 0), rgba(15, 15, 15, 0.75), #151515);
 	color: #D0D0D0;
 }
 .smol_text {
