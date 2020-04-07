@@ -2,7 +2,7 @@
 	display: none;
 }
 #iMEIndicator {
-	position: absolute;
+	position: fixed;
 }
 #iMETarget {
 	position: fixed;
