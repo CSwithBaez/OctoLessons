@@ -19,12 +19,17 @@
 	border-radius: 50%;
 }
 #iMEImage {
-	width: 80vw;
-	left: 10vh;
+	width: 70vw;
+	left: 2vw;
 	top: 0;
-	height: 80vh;
+	height: 100vh;
 	margin: 0;
-	
+}
+#iMEDescription {
+	right: 2vw;
+	top: 30vh;
+	height: 40vh;
+	width: 24vw;
 }
 .blank {
 	border: none;
