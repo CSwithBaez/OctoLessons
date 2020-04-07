@@ -1,15 +1,35 @@
 .hidden {
 	display: none;
 }
-#iMEIndicator {
-	position: absolute;
+#iMEIndicator, #iMEImage, #iMEDescription, #iMETarget, #iMEExit {
+	position: fixed;
 }
 #iMETarget {
-	position: absolute;
 	height: 100vh;
 	width: 100vw;
 	top: 0;
 	left: 0;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+#iMEExit {
+	width: 75px;
+	height: 75px;
+	right: 2vw;
+	top: 2vh;
+	border-radius: 50%;
+}
+#iMEImage {
+	width: 70vw;
+	left: 2vw;
+	top: 0;
+	height: 100vh;
+	margin: 0;
+}
+#iMEDescription {
+	right: 2vw;
+	top: 30vh;
+	height: 40vh;
+	width: 24vw;
 }
 .blank {
 	border: none;
@@ -26,18 +46,18 @@
 	display: block;
 	width: 100%;
 	height: auto;
-	padding: 1vh;
+	padding: 1vh 1vw;
 	color: #DDDDDD
 }
 h1 {
 	color: #000000;
 	font-size: 3em;
-	text-shadow: 2px 1px 2px #101010,
-				 4px 2px 2px #202020,
-				 6px 3px 2px #303030,
-				 8px 4px 2px #505050,
-				 10px 5px 2px #808080,
-				 12px 6px 2px #c0c0c0;
+	text-shadow: 	2px 1px 2px #101010,
+			4px 2px 2px #202020,
+			6px 3px 2px #303030,
+			8px 4px 2px #505050,
+			10px 5px 2px #808080,
+			12px 6px 2px #c0c0c0;
 	text-align: center;
 	margin-top: 3%;
 	margin-bottom: 3%;

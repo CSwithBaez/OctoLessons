@@ -99,7 +99,7 @@ SFToMain.click(function(){
 	animateMain();
 });
 
-var hashes = ["top", "intro", "quetegustahacer", "favS", "", "communityLinks"];
+var hashes = ["top", "intro", "quetegustahacer", "favS", "gallery", "communityLinks"];
 for (let i = 0; i < 6; i++){
 	var butLoc = '#' + (i + 1);
 	$(butLoc).click(function(){location.hash = hashes[i]});
@@ -114,6 +114,64 @@ popTables.forEach(function(Val){
 		Val.querySelector(".popout").style.width = "0";
 	});
 });
+
+var imgHoverer = document.querySelector("#iMEIndicator");
+var imgDisplayer = document.querySelector("#iMETarget");
+var imgActive = document.querySelector("#iMEImage");
+var imgExit = document.querySelector("#iMEExit");
+var displayImgs = document.querySelectorAll(".iMEActivate");
+var imgDescribers = ["Gestalt illustration for Granada Cybersecurity, made of simple but hopefully effective shapes.",
+		    "Attempt at a meme using a World of Tanks image. Please view it as it is: one of my first ever graphics creations >///<",
+		    "Google Doodle entry for the theme \"Kindness\", depicted are chicks (simple, can't do complicated effectively) doing various acts of kindness.",
+		    "Mock cereal box smeared full of Granada-themed imagery, created with multiple images slapped together using Adobe's 3D effects.",
+		    "",
+		    "",
+		    "",
+		    ""];
+var imgDescriber = document.querySelector("#iMEDescription");
+var imgPopped = false;
+displayImgs.forEach(function(Img, Ind){
+	Img.addEventListener("mouseenter", function(){
+		if (!imgPopped){
+			imgActive.setAttribute("src", Img.getAttribute("src"))
+			imgHoverer.classList.remove("hidden");
+			imgDescriber.innerText = imgDescribers[Ind];
+		}
+	});
+	Img.addEventListener("mouseout", function(){
+		if (!imgPopped){
+			imgActive.setAttribute("src", "ARcher_IMGS/blank.png");
+			imgHoverer.classList.add("hidden");
+			imgDescriber.innerText = "";
+		}
+	});
+	Img.addEventListener("click", function(){
+		if (!imgPopped){
+			imgHoverer.classList.add("hidden");
+			imgPopped = true;
+			imgDisplayer.classList.remove("hidden");
+		}
+	});
+});
+imgExit.addEventListener("click", function(){
+	if(imgPopped){
+		imgPopped = false;
+		imgDisplayer.classList.add("hidden");
+	}
+});
+//have span follow mouse
+window.onload = function(){
+        var mouseGetx, mouseGety;
+    // On mousemove use event.clientX and event.clientY to set the location of the div to the location of the cursor:
+        window.addEventListener('mousemove', function(event){
+        	mouseGetx = event.clientX;
+        	mouseGety = event.clientY;                    
+        	if ( typeof mouseGetx !== 'undefined' ){
+        		imgHoverer.style.left = mouseGetx + "px";
+                	imgHoverer.style.top = (mouseGety + 20) + "px";
+        	}
+        }, false);
+}
 
 toggleNav.click(function(){
 	$(".fas")[0].classList.toggle('fa-angle-double-left');
