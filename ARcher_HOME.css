@@ -20,9 +20,10 @@
 }
 #iMEImage {
 	width: 80vw;
+	left: 10vh;
 	top: 0;
 	height: 80vh;
-	margin: 0 auto;
+	margin: 0;
 	
 }
 .blank {
