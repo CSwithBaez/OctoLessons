@@ -158,7 +158,7 @@ window.onload = function(){
         	mouseGety = event.clientY;                    
         	if ( typeof mouseGetx !== 'undefined' ){
         		imgHoverer.style.left = mouseGetx + "px";
-                	imgHoverer.style.top = mouseGety + "px";
+                	imgHoverer.style.top = (mouseGety + 20) + "px";
         	}
         }, false);
 }
