@@ -12,11 +12,18 @@
 	background-color: rgba(255, 255, 255, 0.4);
 }
 #iMEExit {
-	width: 15px;
-	height: 15px;
+	width: 75px;
+	height: 75px;
 	right: 2vw;
 	top: 2vh;
 	border-radius: 50%;
+}
+#iMEImage {
+	width: 100vw;
+	top: 0;
+	height: 80vh;
+	margin: 0 auto;
+	
 }
 .blank {
 	border: none;
