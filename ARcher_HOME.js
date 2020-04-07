@@ -115,6 +115,54 @@ popTables.forEach(function(Val){
 	});
 });
 
+var imgHoverer = document.querySelector("#iMEIndicator");
+var imgDisplayer = document.querySelector("#iMETarget");
+var imgActive = document.querySelector("#iMEImage");
+var imgExit = document.querySelector("#iMEExit");
+var displayImgs = document.querySelectorAll(".iMEActivate");
+var imgDescribers = [];
+var imgPopped = false;
+displayImgs.forEach(function(Img){
+	Img.addEventListener("mouseover", function(){
+		if (!imgPopped){
+			imgActive.setAttribute("src", Img.getAttribute("src"))
+			imgHoverer.classList.remove("hidden");
+		}
+	});
+	Img.addEventListener("mouseout", function(){
+		if (!imgPopped){
+			imgActive.setAttribute("src", "ARcher_IMGS/blank.png");
+			imgHoverer.classList.add("hidden");
+		}
+	});
+	Img.addEventListener("click", function(){
+		if (!imgPopped){
+			imgHoverer.classList.add("hidden");
+			imgPopped = true;
+			imgDisplayer.classList.remove("hidden");
+		}
+	});
+});
+imgExit.addEventListener("click", function(){
+	if(imgPopped){
+		imgPopped = false;
+		imgDisplayer.classList.add("hidden");
+	}
+});
+//have span follow mouse
+window.onload = function(){
+        var mouseGetx, mouseGety;
+    // On mousemove use event.clientX and event.clientY to set the location of the div to the location of the cursor:
+        window.addEventListener('mousemove', function(event){
+        	mouseGetx = event.clientX;
+        	mouseGety = event.clientY;                    
+        	if ( typeof mouseGetx !== 'undefined' ){
+        		imgHoverer.style.left = mouseGetx + "px";
+                	imgHoverer.style.top = mouseGety + "px";
+        	}
+        }, false);
+}
+
 toggleNav.click(function(){
 	$(".fas")[0].classList.toggle('fa-angle-double-left');
 	$(".fas")[0].classList.toggle('fa-angle-double-right');
