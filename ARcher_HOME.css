@@ -11,6 +11,11 @@
 	top: 0;
 	left: 0;
 }
+#iMEExit {
+	right: 5vw;
+	top: 5vh;
+	border-radius: 50%;
+}
 .blank {
 	border: none;
 	padding: 0;
@@ -26,7 +31,7 @@
 	display: block;
 	width: 100%;
 	height: auto;
-	padding: 1vh;
+	padding: 1vh 1vw;
 	color: #DDDDDD
 }
 h1 {
