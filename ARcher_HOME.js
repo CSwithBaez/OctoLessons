@@ -123,7 +123,7 @@ var displayImgs = document.querySelectorAll(".iMEActivate");
 var imgDescribers = [];
 var imgPopped = false;
 displayImgs.forEach(function(Img){
-	Img.addEventListener("mouseover", function(){
+	Img.addEventListener("mouseenter", function(){
 		if (!imgPopped){
 			imgActive.setAttribute("src", Img.getAttribute("src"))
 			imgHoverer.classList.remove("hidden");
