@@ -192,7 +192,7 @@ toggleNav.click(function(){
 //check if div is scrolled into view
 function halfScrolledIntoView(el) {
     	var elemTop = el.getBoundingClientRect().top;
-    	var halfVisible = (2 * elemTop) < window.innerHeight;
+    	var halfVisible = (1.2 * elemTop) < window.innerHeight;
     	return halfVisible;
 }
 window.onscroll = function(){
