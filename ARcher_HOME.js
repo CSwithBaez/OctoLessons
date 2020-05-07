@@ -189,6 +189,19 @@ toggleNav.click(function(){
 	navState = !navState;
 });
 
+//check if div is scrolled into view
+function halfScrolledIntoView(el) {
+    	var elemTop = el.getBoundingClientRect().top;
+    	var halfVisible = (1.2 * elemTop) < window.innerHeight;
+    	return halfVisible;
+}
+window.onscroll = function(){
+	document.querySelectorAll(".showOnScroll").forEach(function(elem){
+		if(halfScrolledIntoView(elem)){
+			elem.classList.add("isVisible");
+		}
+	});
+}
 // COLOR GAME CODE (MADE FROM TUTORIAL, NOT ORIGINAL IM SORRY)
 
 

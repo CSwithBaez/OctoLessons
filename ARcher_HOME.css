@@ -1,3 +1,10 @@
+.showOnScroll.isVisible {
+	opacity: 1;
+}
+.showOnScroll {
+	opacity: 0;
+	transition: all 0.3s 0.15s ease-in;
+}
 .hidden {
 	display: none;
 }
