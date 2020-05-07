@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/OctoLessons/static/css/main.d81fccab.chunk.css",
+    "main.js": "/OctoLessons/static/js/main.617763b2.chunk.js",
+    "main.js.map": "/OctoLessons/static/js/main.617763b2.chunk.js.map",
+    "runtime-main.js": "/OctoLessons/static/js/runtime-main.27e6611c.js",
+    "runtime-main.js.map": "/OctoLessons/static/js/runtime-main.27e6611c.js.map",
+    "static/js/2.5dc8107f.chunk.js": "/OctoLessons/static/js/2.5dc8107f.chunk.js",
+    "static/js/2.5dc8107f.chunk.js.map": "/OctoLessons/static/js/2.5dc8107f.chunk.js.map",
+    "index.html": "/OctoLessons/index.html",
+    "precache-manifest.5694de2506ddc814fdb183187c6fc37f.js": "/OctoLessons/precache-manifest.5694de2506ddc814fdb183187c6fc37f.js",
+    "service-worker.js": "/OctoLessons/service-worker.js",
+    "static/css/main.d81fccab.chunk.css.map": "/OctoLessons/static/css/main.d81fccab.chunk.css.map",
+    "static/js/2.5dc8107f.chunk.js.LICENSE.txt": "/OctoLessons/static/js/2.5dc8107f.chunk.js.LICENSE.txt",
+    "static/media/CyberGestalt.png": "/OctoLessons/static/media/CyberGestalt.56d1fa8e.png",
+    "static/media/Meme.png": "/OctoLessons/static/media/Meme.f3c1d110.png",
+    "static/media/doodleKindness.png": "/OctoLessons/static/media/doodleKindness.ba61eccd.png",
+    "static/media/granadagbox.png": "/OctoLessons/static/media/granadagbox.31239054.png",
+    "static/media/iconB.gif": "/OctoLessons/static/media/iconB.958904a8.gif",
+    "static/media/iconC.gif": "/OctoLessons/static/media/iconC.b6f1c786.gif",
+    "static/media/iconD.gif": "/OctoLessons/static/media/iconD.b66b5dd9.gif",
+    "static/media/iconE.gif": "/OctoLessons/static/media/iconE.d7dbe385.gif",
+    "static/media/iconF.gif": "/OctoLessons/static/media/iconF.76eb56f0.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.27e6611c.js",
+    "static/js/2.5dc8107f.chunk.js",
+    "static/css/main.d81fccab.chunk.css",
+    "static/js/main.617763b2.chunk.js"
+  ]
+}
