@@ -34,6 +34,5 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/OctoLessons/ARcher_REACT/index.html"), {
-  
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
