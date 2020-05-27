@@ -125,3 +125,7 @@ body{
 .textRight{
    text-align: right;
 }
+
+h3{
+   padding: 0 20%;
+}
