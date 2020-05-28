@@ -1,7 +1,7 @@
 let count = 0.0;
 let xFw = true;
 let yFw = true;
-const ballthingo = document.getElementById('ball');
+const ballthingo = document.getElementById('ballthingo');
 const shift = (xMov, yMov) => {
 	var initL = ballthingo.style.left;
 	initL.slice(0, initL.length - 2);
