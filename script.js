@@ -2,11 +2,14 @@ let count = 0.0;
 let xFw = true;
 let yFw = true;
 var ballthingo = document.getElementById('ballthingo');
+const dePx = (str) => {
+	return str.slice(0, str.length - 2);
+}
 const shift = (xMov, yMov) => {
 	var initL = ballthingo.style.left;
-	initL = initL.slice(0, initL.length - 2);
+	initL = dePx(initL);
 	var initT = ballthingo.style.top;
-	initT = initT.slice(0, initT.length - 2);
+	initT = dePx(initT);
 	ballthingo.style.left = (Number(initL) + xMov) + "px";
 	ballthingo.style.top = (Number(initT) + yMov) + "px";
 }
@@ -15,11 +18,11 @@ const shift = (xMov, yMov) => {
 		var tweak = Number(Math.round(Math.sin(count)*4));
 		xFw ? shift(2, 0) : shift(-2, 0);
 		yFw ? shift(0, 2) : shift(0, -2);
-		(ballthingo.style.left > window.innerWidth) ? xFw = false
-         	: (ballthingo.style.left < 0) ? xFw = true
+		(dePx(ballthingo.style.left) > window.innerWidth) ? xFw = false
+         	: (dePx(ballthingo.style.left) < 0) ? xFw = true
          	: null;
-		(ballthingo.style.top > window.innerHeight) ? yFw = false
-         	: (ballthingo.style.top < 0) ? yFw = true
+		(dePx(ballthingo.style.top) > window.innerHeight) ? yFw = false
+         	: (dePx(ballthingo.style.top) < 0) ? yFw = true
          	: null;
 		count += 0.05;
 		document.getElementsByTagName('body')[0].style.backgroundColor = "#" + (151515 + (tweak * 10101));
