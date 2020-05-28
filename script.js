@@ -16,12 +16,12 @@ const shift = (xMov, yMov) => {
 (function(){
 	const SIID = setInterval(function(){
 		var tweak = Number(Math.round(Math.sin(count)*4));
-		xFw ? shift(2, 0) : shift(-2, 0);
-		yFw ? shift(0, 2) : shift(0, -2);
-		(dePx(ballthingo.style.left) > window.innerWidth) ? xFw = false
+		xFw ? shift(5, 0) : shift(-5, 0);
+		yFw ? shift(0, 5) : shift(0, -5);
+		(dePx(ballthingo.style.left) > (window.innerWidth - 5)) ? xFw = false
          	: (dePx(ballthingo.style.left) < 0) ? xFw = true
          	: null;
-		(dePx(ballthingo.style.top) > window.innerHeight) ? yFw = false
+		(dePx(ballthingo.style.top) > (window.innerHeight - 5)) ? yFw = false
          	: (dePx(ballthingo.style.top) < 0) ? yFw = true
          	: null;
 		count += 0.05;
