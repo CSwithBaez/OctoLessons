@@ -47,3 +47,10 @@ table {
 .pageLinks {
 	width: 20%; /* I think this may result in a smaller button size, to see effect, replace . with # */
 }
+
+#ballthingo {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(100, 220, 220);
+}
