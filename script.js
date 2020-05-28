@@ -1,6 +1,7 @@
 let count = 0.0;
 let xFw = true;
 let yFw = true;
+var ballthingo = document.getElementById('ballthingo');
 const shift = (xMov, yMov) => {
 	var ballthingo = document.getElementById('ballthingo');
 	var initL = ballthingo.style.left;
