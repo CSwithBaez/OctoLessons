@@ -4,11 +4,11 @@ let yFw = true;
 var ballthingo = document.getElementById('ballthingo');
 const shift = (xMov, yMov) => {
 	var initL = ballthingo.style.left;
-	initL.slice(0, initL.length - 2);
+	initL = initL.slice(0, initL.length - 2);
 	var initT = ballthingo.style.top;
-	initT.slice(0, initT.length - 2);
-	ballthingo.style.left = (initL + xMov) + "px";
-	ballthingo.style.top = (initT + yMov) + "px";
+	initT = initT.slice(0, initT.length - 2);
+	ballthingo.style.left = (Number(initL) + xMov) + "px";
+	ballthingo.style.top = (Number(initT) + yMov) + "px";
 }
 (function(){
 	const SIID = setInterval(function(){
