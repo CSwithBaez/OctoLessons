@@ -39,10 +39,6 @@ body {
 table {
 	margin: 2px 3%;
 	width: 94%;
-	border: 1px solid black;
-}
-td {
-	border: 1px solid black;
 }
 #toDos {
 	width: 80%;
