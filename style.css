@@ -54,4 +54,6 @@ table {
 	height: 10px;
 	background-color: rgb(100, 220, 220);
 	border-radius: 50%;
+	left: 0px;
+	top: 0px;
 }
