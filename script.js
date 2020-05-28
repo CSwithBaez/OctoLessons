@@ -18,10 +18,10 @@ const shift = (xMov, yMov) => {
 		var tweak = Number(Math.round(Math.sin(count)*4));
 		xFw ? shift(5, 0) : shift(-5, 0);
 		yFw ? shift(0, 5) : shift(0, -5);
-		(dePx(ballthingo.style.left) > (window.innerWidth - 50)) ? xFw = false
+		(dePx(ballthingo.style.left) > (window.innerWidth - 45)) ? xFw = false
          	: (dePx(ballthingo.style.left) < 0) ? xFw = true
          	: null;
-		(dePx(ballthingo.style.top) > (window.innerHeight - 50)) ? yFw = false
+		(dePx(ballthingo.style.top) > (window.innerHeight - 45)) ? yFw = false
          	: (dePx(ballthingo.style.top) < 0) ? yFw = true
          	: null;
 		count += 0.05;
