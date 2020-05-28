@@ -6,7 +6,7 @@ const shift = (xMov, yMov) => {
 	var initL = ballthingo.style.left;
 	initL.slice(0, initL.length - 2);
 	var initT = ballthingo.style.top;
-	initT.slice(0, initR.length - 2);
+	initT.slice(0, initT.length - 2);
 	ballthingo.style.left = (initL + xMov) + "px";
 	ballthingo.style.top = (initT + yMov) + "px";
 }
