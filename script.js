@@ -15,11 +15,11 @@ const shift = (xMov, yMov) => {
 		var tweak = Number(Math.round(Math.sin(count)*4));
 		xFw ? shift(2, 0) : shift(-2, 0);
 		yFw ? shift(0, 2) : shift(0, -2);
-		(ballthingo.style.left > window.innerWidth) ? xFw = false;
-         	: (ballthingo.style.left < 0) ? xFw = true;
+		(ballthingo.style.left > window.innerWidth) ? xFw = false
+         	: (ballthingo.style.left < 0) ? xFw = true
          	: null;
-		(ballthingo.style.top > window.innerHeight) ? yFw = false;
-         	: (ballthingo.style.top < 0) ? yFw = true;
+		(ballthingo.style.top > window.innerHeight) ? yFw = false
+         	: (ballthingo.style.top < 0) ? yFw = true
          	: null;
 		count += 0.05;
 		document.getElementsByTagName('body')[0].style.backgroundColor = "#" + (151515 + (tweak * 10101));
