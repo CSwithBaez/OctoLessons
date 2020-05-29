@@ -57,3 +57,7 @@ table {
 	left: 0px;
 	top: 0px;
 }
+
+.off {
+	display: none;
+}
