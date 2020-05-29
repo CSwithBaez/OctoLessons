@@ -1,7 +1,9 @@
 let count = 0.0;
 let xFw = true;
 let yFw = true;
-var ballthingo = document.getElementById('ballthingo');
+const ballthingo = document.getElementById('ballthingo');
+const toggleBall = document.getElementById('balltog');
+let ballOn = false;
 const dePx = (str) => {
 	return str.slice(0, str.length - 2);
 }
@@ -13,11 +15,16 @@ const shift = (xMov, yMov) => {
 	ballthingo.style.left = (Number(initL) + xMov) + "px";
 	ballthingo.style.top = (Number(initT) + yMov) + "px";
 }
+toggleBall.addEventListener('click', () => {
+	ballOn = !ballOn;
+})
 (function(){
 	const SIID = setInterval(function(){
 		var tweak = Number(Math.round(Math.sin(count)*4));
-		xFw ? shift(5, 0) : shift(-5, 0);
-		yFw ? shift(0, 5) : shift(0, -5);
+		if(ballOn) {
+			xFw ? shift(5, 0) : shift(-5, 0);
+			yFw ? shift(0, 5) : shift(0, -5);
+		}
 		(dePx(ballthingo.style.left) > (window.innerWidth - 45)) ? xFw = false
          	: (dePx(ballthingo.style.left) < 0) ? xFw = true
          	: null;
