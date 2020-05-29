@@ -21,7 +21,6 @@ const shift = (xMov, yMov) => {
 		if(ballOn) {
 			xFw ? shift(5, 0) : shift(-5, 0);
 			yFw ? shift(0, 5) : shift(0, -5);
-			console.log("um");
 		}
 		(dePx(ballthingo.style.left) > (window.innerWidth - 45)) ? xFw = false
          	: (dePx(ballthingo.style.left) < 0) ? xFw = true
@@ -29,12 +28,11 @@ const shift = (xMov, yMov) => {
 		(dePx(ballthingo.style.top) > (window.innerHeight - 45)) ? yFw = false
          	: (dePx(ballthingo.style.top) < 0) ? yFw = true
          	: null;
-		console.log("ticking!");
 		count += 0.05;
 		document.getElementsByTagName('body')[0].style.backgroundColor = "#" + (151515 + (tweak * 10101));
 	}, 20)
 })();
 toggleBall.addEventListener('click', () => {
 	ballOn = !ballOn;
-	console.log("clicked");
+	ballthingo.classList.toggle("off");
 })
