@@ -15,10 +15,6 @@ const shift = (xMov, yMov) => {
 	ballthingo.style.left = (Number(initL) + xMov) + "px";
 	ballthingo.style.top = (Number(initT) + yMov) + "px";
 }
-toggleBall.addEventListener('click', () => {
-	ballOn = !ballOn;
-	console.log("clicked");
-})
 (function(){
 	const SIID = setInterval(function(){
 		var tweak = Number(Math.round(Math.sin(count)*4));
@@ -38,3 +34,7 @@ toggleBall.addEventListener('click', () => {
 		document.getElementsByTagName('body')[0].style.backgroundColor = "#" + (151515 + (tweak * 10101));
 	}, 20)
 })();
+toggleBall.addEventListener('click', () => {
+	ballOn = !ballOn;
+	console.log("clicked");
+})
