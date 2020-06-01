@@ -4,6 +4,12 @@ let yFw = true;
 const ballthingo = document.getElementById('ballthingo');
 const toggleBall = document.getElementById('balltog');
 let ballOn = false;
+const fallthingo = document.getElementById('fallingthingo');
+let fallData = [];
+for(let i = 0; i < 20; i++) {
+	fallData.push({faId: i, faSpd: 0});
+}
+console.log(fallData);
 const dePx = (str) => {
 	return str.slice(0, str.length - 2);
 }
