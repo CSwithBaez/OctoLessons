@@ -8,13 +8,12 @@ const fallthingo = document.getElementById('fallingthingo');
 let fallData = [];
 let falling = 0;
 for(let i = 0; i < 20; i++) {
-	fallData.push({faId: i, faSpd: 0});
+	fallData.push({faX: Math.floor(Math.random() * window.innerWidth), faSpd: 0});
 	var fallObj = document.createElement("div");
 	fallObj.className = "faller";
 	fallthingo.appendChild(fallObj);
 }
 const fallers = document.getElementsByClassName('faller');
-console.log(fallers);
 const dePx = (str) => {
 	return str.slice(0, str.length - 2);
 }
