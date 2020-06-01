@@ -6,8 +6,12 @@ const toggleBall = document.getElementById('balltog');
 let ballOn = false;
 const fallthingo = document.getElementById('fallingthingo');
 let fallData = [];
+let falling = 0;
 for(let i = 0; i < 20; i++) {
 	fallData.push({faId: i, faSpd: 0});
+	var fallObj = document.createElement("div");
+	fallObj.className = "faller";
+	fallthingo.appendChild(fallObj);
 }
 console.log(fallData);
 const dePx = (str) => {
