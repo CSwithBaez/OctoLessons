@@ -13,7 +13,8 @@ for(let i = 0; i < 20; i++) {
 	fallObj.className = "faller";
 	fallthingo.appendChild(fallObj);
 }
-console.log(fallData);
+const fallers = document.getElementsByClassName('faller');
+console.log('fallers');
 const dePx = (str) => {
 	return str.slice(0, str.length - 2);
 }
