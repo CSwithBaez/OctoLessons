@@ -14,7 +14,7 @@ for(let i = 0; i < 20; i++) {
 	fallthingo.appendChild(fallObj);
 }
 const fallers = document.getElementsByClassName('faller');
-console.log('fallers');
+console.log(fallers);
 const dePx = (str) => {
 	return str.slice(0, str.length - 2);
 }
