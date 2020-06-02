@@ -62,4 +62,4 @@ toggleFall.addEventListener('click', () => {
 	fallthingo.classList.toggle("off");
 	fallOn ? createFallers() : fallthingo.innerHTML = '';
 	fallers = document.getElementsByClassName('faller');
-}
+})
