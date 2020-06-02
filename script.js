@@ -40,7 +40,10 @@ const shift = (xMov, yMov) => {
 		for(let j = falling; j > -1; j--) {
 			((Number(dePx(fallers[j].style.top)) + fallData[j].faSpd + 13) > window.innerHeight) ? fallData[j].faSpd = (-fallData[j].faSpd * 0.9) : fallData[j].faSpd ++;
 			fallers[j].style.top = (Number(dePx(fallers[j].style.top)) + fallData[j].faSpd) + "px";
+			fallData[j].faX = fallData[j].faX * window.innerWidth / initWidth;
+			fallers[j].style.left = fallData[j].faX + "px";
 		}
+		initWidth = window.innerWidth;
 		if(ballOn) {
 			xFw ? shift(5, 0) : shift(-5, 0);
 			yFw ? shift(0, 5) : shift(0, -5);
