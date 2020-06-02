@@ -37,7 +37,7 @@ const shift = (xMov, yMov) => {
 			falling ++;
 		}
 		for(let j = falling; j > -1; j--) {
-			fallData[j].faSpd ++;
+			(dePx(fallers[j].style.top) > (window.innerHeight - 10)) ? fallData[j].faSpd = -fallData[j].faSpd : fallData[j].faSpd ++;
 			fallers[j].style.top = (Number(dePx(fallers[j].style.top)) + fallData[j].faSpd) + "px";
 			console.log("Falling: " + falling + ", " + j);
 		}
