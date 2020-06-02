@@ -11,6 +11,7 @@ for(let i = 0; i < 20; i++) {
 	fallData.push({faX: Math.floor(Math.random() * window.innerWidth), faSpd: 0});
 	var fallObj = document.createElement("div");
 	fallObj.className = "faller";
+	fallObj.style.left = fallData[i].faX + "px";
 	fallthingo.appendChild(fallObj);
 }
 const fallers = document.getElementsByClassName('faller');
