@@ -58,6 +58,15 @@ table {
 	top: 0px;
 }
 
+.faller {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(220, 100, 0);
+	left: 0px;
+	top: 0px;
+}
+
 .off {
 	display: none;
 }
