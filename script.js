@@ -37,7 +37,7 @@ const shift = (xMov, yMov) => {
 			falling ++;
 		}
 		for(let j = falling; j > -1; j--) {
-			((Number(dePx(fallers[j].style.top)) + fallData[j].faSpd + 3) > window.innerHeight) ? fallData[j].faSpd = -fallData[j].faSpd : fallData[j].faSpd ++;
+			((Number(dePx(fallers[j].style.top)) + fallData[j].faSpd + 13) > window.innerHeight) ? fallData[j].faSpd = -fallData[j].faSpd : fallData[j].faSpd ++;
 			fallers[j].style.top = (Number(dePx(fallers[j].style.top)) + fallData[j].faSpd) + "px";
 		}
 		if(ballOn) {
