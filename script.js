@@ -19,8 +19,7 @@ const createFallers = () => {
 		fallthingo.appendChild(fallObj);
 	}
 }
-createFallers();
-const fallers = document.getElementsByClassName('faller');
+let fallers = document.getElementsByClassName('faller');
 let fallOn = false;
 const dePx = (str) => {
 	return str.slice(0, str.length - 2);
@@ -61,4 +60,6 @@ toggleBall.addEventListener('click', () => {
 toggleFall.addEventListener('click', () => {
 	fallOn = !fallOn;
 	fallthingo.classList.toggle("off");
+	fallOn ? createFallers() : fallthingo.innerHTML = '';
+	fallers = document.getElementsByClassName('faller');
 }
