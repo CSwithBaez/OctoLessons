@@ -36,7 +36,10 @@ const shift = (xMov, yMov) => {
 		for(let j = falling; j > 0; j--) {
 			fallData[j].faSpd ++;
 			fallers[j].style.top = (Number(dePx(fallers[j].style.top)) + fallData[j].faSpd) + "px";
-			(falling < 20) ? falling++ : null;
+			if(falling < 20) {
+				falling ++;
+			}
+			console.log("Falling: " + falling + ", " + j);
 		}
 		if(ballOn) {
 			xFw ? shift(5, 0) : shift(-5, 0);
