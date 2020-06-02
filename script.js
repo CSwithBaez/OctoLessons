@@ -33,10 +33,10 @@ const shift = (xMov, yMov) => {
 (function(){
 	const SIID = setInterval(function(){
 		var tweak = Number(Math.round(Math.sin(count)*4));
-		if(falling < 20) {
+		if(falling < 19) {
 			falling ++;
 		}
-		for(let j = falling; j > 0; j--) {
+		for(let j = falling; j > -1; j--) {
 			fallData[j].faSpd ++;
 			fallers[j].style.top = (Number(dePx(fallers[j].style.top)) + fallData[j].faSpd) + "px";
 			console.log("Falling: " + falling + ", " + j);
