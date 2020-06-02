@@ -6,7 +6,7 @@ const toggleBall = document.getElementById('balltog');
 let ballOn = false;
 const fallthingo = document.getElementById('fallingthingo');
 let fallData = [];
-let falling = 0;
+let falling = -1;
 let initWidth = window.innerWidth;
 const createFallers = () => {
 	for(let i = 0; i < 20; i++) {
@@ -37,9 +37,8 @@ const shift = (xMov, yMov) => {
 			falling ++;
 		}
 		for(let j = falling; j > -1; j--) {
-			(dePx(fallers[j].style.top) > (window.innerHeight - 10)) ? fallData[j].faSpd = -fallData[j].faSpd : fallData[j].faSpd ++;
+			((Number(dePx(fallers[j].style.top)) + fallData[j] + 3) > window.innerHeight) ? fallData[j].faSpd = -fallData[j].faSpd : fallData[j].faSpd ++;
 			fallers[j].style.top = (Number(dePx(fallers[j].style.top)) + fallData[j].faSpd) + "px";
-			console.log("Falling: " + falling + ", " + j);
 		}
 		if(ballOn) {
 			xFw ? shift(5, 0) : shift(-5, 0);
