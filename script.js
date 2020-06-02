@@ -7,13 +7,17 @@ let ballOn = false;
 const fallthingo = document.getElementById('fallingthingo');
 let fallData = [];
 let falling = 0;
-for(let i = 0; i < 20; i++) {
-	fallData.push({faX: Math.floor(Math.random() * window.innerWidth), faSpd: 0});
-	var fallObj = document.createElement("div");
-	fallObj.className = "faller";
-	fallObj.style.left = fallData[i].faX + "px";
-	fallthingo.appendChild(fallObj);
+let initWidth = window.innerWidth;
+const createFallers = () => {
+	for(let i = 0; i < 20; i++) {
+		fallData.push({faX: Math.floor(Math.random() * initWidth), faSpd: 0});
+		var fallObj = document.createElement("div");
+		fallObj.className = "faller";
+		fallObj.style.left = fallData[i].faX + "px";
+		fallthingo.appendChild(fallObj);
+	}
 }
+createFallers();
 const fallers = document.getElementsByClassName('faller');
 const dePx = (str) => {
 	return str.slice(0, str.length - 2);
@@ -29,6 +33,11 @@ const shift = (xMov, yMov) => {
 (function(){
 	const SIID = setInterval(function(){
 		var tweak = Number(Math.round(Math.sin(count)*4));
+		for(let j = falling; j > 0; j--) {
+			fallData[j].faSpd ++;
+			fallers[j].style.top = (Number(dePx(fallers[j].style.top)) + fallData[j].faSpd) + "px";
+			(falling < 20) ? falling++ : null;
+		}
 		if(ballOn) {
 			xFw ? shift(5, 0) : shift(-5, 0);
 			yFw ? shift(0, 5) : shift(0, -5);
